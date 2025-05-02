@@ -5,13 +5,13 @@ const rot13 = (message) => {
 
 let e_is_shown = false;
 
-document.getElementById('iemail').addEventListener("click", function(){
-    let demail = document.getElementById('demail');
-    let msg = "avxuvynpp16" + "@" + "tznvy.pbz<oe>" + "acnyrgv@hpfq.rqh";
-    demail.innerHTML = rot13(msg);
-    demail.style.opacity = e_is_shown ? 0 : 1;
-    e_is_shown = !e_is_shown;
-});
+// document.getElementById('iemail').addEventListener("click", function(){
+//     let demail = document.getElementById('demail');
+//     let msg = "avxuvynpp16" + "@" + "tznvy.pbz<oe>" + "acnyrgv@hpfq.rqh";
+//     demail.innerHTML = rot13(msg);
+//     demail.style.opacity = e_is_shown ? 0 : 1;
+//     e_is_shown = !e_is_shown;
+// });
 
 window.addEventListener('scroll', function() {
     const header = document.querySelector('header');
