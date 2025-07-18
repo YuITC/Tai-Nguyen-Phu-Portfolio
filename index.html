@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Metadata -->
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Tai Nguyen Phu - AI Engineer Intern | Portfolio</title>
-        <meta name="description" content="Portfolio of Tai Nguyen Phu, final-year CS student at UIT-VNUHCM (Vietnam), specializing in Machine Learning, NLP and LLMs.">
-        <meta name="keywords" content="Tai Nguyen Phu, AI Engineer Intern, Machine Learning, LLMs, AI Portfolio">
+        <meta name="viewport"    content="width=device-width, initial-scale=1">
+        <meta name="description" content="Portfolio of Tai Nguyen Phu, a 3rd-year CS student at UIT (VNUHCM - Vietnam), specializing in Machine Learning, NLP and LLMs.">
+        <meta name="keywords"    content="Tai Nguyen Phu, YuITC, AI Engineer, Machine Learning, LLM, AI Portfolio">
+        <title>Portfolio of Tai Nguyen Phu</title>
+
+
+        <!-- Stylesheets -->
         <link rel="stylesheet" type="text/css" href="styles/main.css">
         <link rel="stylesheet" type="text/css" href="styles/nav.css">
         <link rel="stylesheet" type="text/css" href="styles/info.css">
@@ -15,14 +19,17 @@
         <link rel="stylesheet" type="text/css" href="styles/publications.css">
         <link rel="stylesheet" type="text/css" href="styles/blog.css">
 
-        <link rel="icon" href="assets/me.jpg" type="image/x-icon">
+
+        <!-- Web icon -->
+        <link rel="icon" href="assets/info/Avatar.jpg" type="image/x-icon">
+
 
         <!-- Open Graph tags -->
-        <meta property="og:title" content="Tai Nguyen Phu - AI Engineer Intern | Portfolio">
-        <meta property="og:description" content="Portfolio of Tai Nguyen Phu, final-year CS student at UIT-VNUHCM (Vietnam), specializing in Machine Learning, NLP and LLMs.">
-        <meta property="og:image" content="https://github.com/YuITC/Tai-Nguyen-Phu-Portfolio/blob/main/assets/me.jpg" />
-        <meta property="og:url" content="https://yuitc.github.io/" />
-        <meta property="og:type" content="website" />
+        <meta property="og:title"       content="Portfolio of Tai Nguyen Phu">
+        <meta property="og:description" content="Portfolio of Tai Nguyen Phu, a 3rd-year CS student at UIT (VNUHCM - Vietnam), specializing in Machine Learning, NLP and LLMs.">
+        <meta property="og:image"       content="https://github.com/YuITC/portfolio/blob/main/assets/info/Avatar.jpg" />
+        <meta property="og:url"         content="https://yuitc.github.io/" />
+        <meta property="og:type"        content="website" />
 
 
         <!-- Structured Data Markup -->
@@ -32,14 +39,14 @@
             "@type"   : "Person",
             "name"    : "Tai Nguyen Phu",
             "url"     : "https://yuitc.github.io/",
-            "image"   : "https://yuitc.github.io/assets/me.jpg",
+            "image"   : "https://yuitc.github.io/assets/info/Avatar.jpg",
             "sameAs": [
                 "https://www.linkedin.com/in/tainguyenphu2502/",
                 "https://github.com/YuITC",
                 "https://huggingface.co/YuITC",
                 "https://www.facebook.com/taiphu2502/"
             ],
-            "jobTitle": "Final-year Computer Science Student",
+            "jobTitle": "3rd-year Computer Science Student",
             "alumniOf": {
                 "@type": "HighSchool",
                 "name" : "Le Khiet High School for the Gifted (Quang Ngai, Vietnam)"
@@ -49,7 +56,7 @@
                 "name" : "University of Information Technology (UIT-VNUHCM, Vietnam)"
             },
             "knowsAbout" : ["Machine Learning", "Natural Language Processing", "Large Language Models"],
-            "description": "Currently studying Computer Science at University of Information Technology (UIT-VNUHCM), Vietnam, specializing in Machine Learning, Data Science, and Large Language Models (LLMs)."
+            "description": "Currently studying Computer Science at University of Information Technology (UIT-VNUHCM, Vietnam), specializing in Machine Learning, NLP and LLMs."
             }
         </script>
     </head>
@@ -57,18 +64,22 @@
     <body>
         <header class="gradient-background">
             <nav>
-                <div class="nav-left">
+                <div class="nav-left">  
                     <a href="#dhead" class="nav-link">Tai Nguyen Phu</a>
                 </div>
+
+                <!-- Desktop Navigation -->
                 <div class="nav-right">
                     <a href="#about" class="nav-link">About</a>
                     <!-- <a href="#blog" class="nav-link">Blog</a> -->
                     <a href="#projects" class="nav-link">Projects</a>
                     <!-- <a href="#publications" class="nav-link">Publications</a> -->
+                    <a href="#certifications" class="nav-link">Certifications</a>
                     <a href="#timeline" class="nav-link">Timeline</a>
                 </div>
+
+                <!-- Mobile Navigation -->
                 <div class="nav-mobile">
-                    <!-- <button id="menu-toggle">Menu</button> -->
                     <button id="menu-toggle" aria-label="Toggle menu">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -79,6 +90,7 @@
                         <!-- <a href="#blog" class="nav-link">Blog</a> -->
                         <a href="#projects" class="nav-link">Projects</a>
                         <!-- <a href="#publications" class="nav-link">Publications</a> -->
+                        <a href="#certifications" class="nav-link">Certifications</a>
                         <a href="#timeline" class="nav-link">Timeline</a>
                     </div>
                 </div>
@@ -89,30 +101,32 @@
             <!-- HEADER -->
             <div id="dhead" class="container gradient-background">
                 <div class="row">
+                    <!-- Image -->
                     <div id="dpic">
-                        <img src="assets/me.jpg" alt="Tai Nguyen Phu - AI Engineer Intern" />
+                        <img src="assets/info/Avatar.jpg" alt="Tai Nguyen Phu - AI Engineer" />
                     </div>
+
                     <div id="ddesc">
                         <h1>Tai Nguyen Phu</h1>
-                        <h2>Exploring the Frontiers of AI and LLMs</h2>
+                        <h2><i>"Every next level of life will demand a different version of you."</i></h2>
                         <div id="dico">
                             <a href="https://www.linkedin.com/in/tainguyenphu2502/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/linkedin.svg" class="iico" alt="Connect with Tai on LinkedIn"/></a>
+                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/linkedin.svg" class="iico" alt="Connect with me on LinkedIn"/></a>
 
                             <a href="https://github.com/YuITC" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/github.svg" class="iico" alt="View Tai's GitHub projects"/></a>
+                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/github.svg" class="iico" alt="View my GitHub projects"/></a>
 
-                            <a href="https://huggingface.co/YuITC" target="_blank" rel="noopener noreferrer" aria-label="Hugging Face">
-                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@14.12.3/icons/huggingface.svg" class="iico" alt="Tai's Hugging Face profile"/></a>
+                            <!-- <a href="https://huggingface.co/YuITC" target="_blank" rel="noopener noreferrer" aria-label="Hugging Face">
+                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@14.12.3/icons/huggingface.svg" class="iico" alt="Tai's Hugging Face profile"/></a> -->
 
                             <a href="https://www.facebook.com/taiphu2502/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/facebook.svg" class="iico" alt="Follow Tai on Facebook" /></a>
+                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/facebook.svg" class="iico" alt="Follow me on Facebook" /></a>
 
                             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tainguyenphu2502@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email">
-                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/gmail.svg" class="iico" alt="Contact Tai via email"/></a>
+                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/gmail.svg" class="iico" alt="Contact me via email"/></a>
                         </div>
                         <div id="demail"></div>
-                        <a href="TaiNguyenPhu_Resume.pdf" target="_blank" rel="noopener noreferrer" class="resume-button">
+                        <a href="TaiNguyenPhu_AI_Engineer_Resume.pdf" target="_blank" rel="noopener noreferrer" class="resume-button">
                             <img src="assets/resume.svg" class="iico" alt="PDF icon" />
                             View My Resume
                         </a>
@@ -133,9 +147,10 @@
             <!-- ABOUT & SKILLS -->
             <div class="section" id="about">
                 <h2>About</h2>
-                <p>👋 Hi, I'm <strong>Tai Nguyen Phu</strong> &mdash; a final-year <strong>Computer Science</strong> student passonate about <strong>Machine Learning</strong>, <strong>Natural Language Processing</strong>, and <strong>Large Language Models</strong>. <br> 
-                    I'm currently pursuing my <strong>Bachelor's</strong> at the University of Information Technology (VNUHCM-Vietnam), focusing on advancing AI innovation and real-world applications. <br> <br> 
-                
+                <p>👋 Hi, I'm <strong>Tai Nguyen Phu</strong> &mdash; a 3rd-year <strong>Computer Science</strong> student passionate about <strong>Machine Learning</strong>, <strong>Natural Language Processing</strong>, and <strong>Large Language Models</strong>. <br>
+                    I'm currently pursuing my <strong>Bachelor's</strong> at the University of Information Technology (VNUHCM &mdash; Vietnam), focusing on advancing AI innovation and real-world applications. <br> <br> 
+                </p>
+
                 <h2>SKILLS</h2>
                 <div class="skills-container">
                     <div class="tab-buttons">
@@ -148,8 +163,9 @@
                     <div id="ml-dl" class="tab-content active">
                         <div class="skills-section">
                             <div class="skills">
-                                <div class="skill-item"><span>Large Language Models:</span> Transformers (Hugging Face), SentenceTransformer, Langchain, LLaMA, LoRA (PEFT), Promt Engineering, RAG</div>
-                                <div class="skill-item"><span>LLM APIs:</span> Groq API, OpenAI API</div>
+                                <div class="skill-item"><span>Large Language Models:</span> Transformers (Hugging Face), SentenceTransformer, Langchain, LoRA (PEFT), Promt Engineering, RAG</div>
+                                <div class="skill-item"><span>Agentic AI:</span> LangChain, LangSmith, LangGraph, smolagents</div>
+                                <div class="skill-item"><span>LLM APIs:</span> Groq API, OpenAI API, Gemini API</div>
                                 <div class="skill-item"><span>Vector Databases:</span> Chroma, FAISS</div>
                                 <div class="skill-item"><span>Natural Language Processing:</span> Hugging Face Tokenizers, NLTK, SpaCy, Regex</div>
 
@@ -167,7 +183,8 @@
                     <div id="programming" class="tab-content">
                         <div class="skills-section">
                             <div class="skills">
-                                <div class="skill-item"><span>Languages:</span> Python, C++, SQL (basic), HTML (basic)</div>
+                                <div class="skill-item"><span>Languages (proficient):</span> Python, C++, C</div>
+                                <div class="skill-item"><span>Language (basic):</span> SQL, Javascript, HTML, CSS</div>
                             </div>
                         </div>
                     </div>
@@ -177,6 +194,7 @@
                             <div class="skills">
                                 <div class="skill-item"><span>Version Control:</span> Git, GitHub, GitHub Actions</div>
                                 <div class="skill-item"><span>IDEs:</span> VS Code, Jupyter Notebooks</div>
+                                <div class="skill-item"><span>APIs: </span> FastAPI</div>
                                 <div class="skill-item"><span>Containerization:</span> Docker</div>
                                 <div class="skill-item"><span>Cloud:</span> AWS (basic)</div>
                                 <div class="skill-item"><span>MLOps:</span> Weights & Bias, MLflow (basic)</div>
@@ -217,8 +235,41 @@
             <div class="section" id="projects">
                 <h2>Projects</h2>
 
-                <h3>Undergraduate Projects - NLP Related</h3>
+                <h3>Undergraduate Projects - NLP/LLM Related</h3>
                 <div class="project-grid">
+
+                    <div class="project-card">
+                        <div class="project-preview">
+                            <img loading="lazy" src="assets/projects/nlp_multimodal_rag.png" alt=" RAG Chatbot with Memory and Multimodal-Multilingual Support">
+                            <h4> RAG Chatbot with Memory and Multimodal-Multilingual Support ⚖️</h4>
+                            <p class="project-brief">A conservational RAG system,  support both multimodal (ability to process with text, images, tables, etc.) and multilingual, integrated with LangChain to provide Memory mechanism for chatbot. Helps user to have a deep understanding with scientific papers (or uploaded PDF file).</p>
+                            <p class="project-tools">Python, HuggingFace, SentenceTransformers, Gradio, Docker, Pandas, FAISS</p>
+                        </div>
+                        <button class="view-details-btn">View Details</button>
+                        <div class="project-details hidden">
+                            <div class="project-info">
+                                <p><strong>Semester: </strong>6</p>
+                                <p><strong>Team size: </strong>1</p>
+                                <p><strong>Date: </strong>Mar 2025 - Apr 2025</p>
+                                <p><strong>Course: </strong>None</p>
+                            </div>
+                            <p class="project-description">
+                                What I have done:
+                                <ul>
+                                    <li>Fine-tuned a Sentence-BERT model (bert-base-multilingual-cased) on a 100K+ Vietnamese legal documents using CachedMultipleNegativesRankingLoss for domain-specific semantic retrieval.</li>
+                                    <li>Achieved significant performance boost on MTEB evaluation benchmark (NDCG@10: 60.4%, MAP@10: 53.6%) compared to pre-trained baseline (NDCG@10: 0.023%, MAP@10: 0.014%).</li>
+                                    <li>Designed and deployed a scalable semantic search pipeline using FAISS for real-time legal document retrieval.</li>
+                                    <li>Built a user-friendly web interface with Gradio to facilitate interactive query testing.</li>
+                                    <li>Containerized the full system with Docker to ensure reproducibility, portability, and seamless deployment.</li>
+                                </ul>
+                            </p>
+                            <div class="project-links">
+                                <a href="https://github.com/YuITC/Vietnamese-Legal-Doc-Retrieval" target="_blank">Code</a>
+                                <a href="https://huggingface.co/spaces/YuITC/Vietnamese-Legal-Doc-Retrieval" target="_blank">Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
 
                     <div class="project-card">
                         <div class="project-preview">
@@ -232,7 +283,7 @@
                             <div class="project-info">
                                 <p><strong>Semester: </strong>6</p>
                                 <p><strong>Team size: </strong>1</p>
-                                <p><strong>Date: </strong>Apr 2025</p>
+                                <p><strong>Date: </strong>Mar 2025 - Apr 2025</p>
                                 <p><strong>Course: </strong>None</p>
                             </div>
                             <p class="project-description">
@@ -264,7 +315,7 @@
                             <div class="project-info">
                                 <p><strong>Semester: </strong>6</p>
                                 <p><strong>Team size: </strong>1</p>
-                                <p><strong>Date: </strong>March 2025 - Apr 2025</p>
+                                <p><strong>Date: </strong>Mar 2025 - Apr 2025</p>
                                 <p><strong>Course: </strong>None</p>
                             </div>
                             <p class="project-description">
@@ -416,8 +467,8 @@
                     <div class="project-card">
                         <div class="project-preview">
                             <img loading="lazy" src="" alt="Real-time Face Attendance System">
-                            <h4>Real-time Face Attendance System (Ongoing)</h4>
-                            <p class="project-brief">A real-time Face Recognition application using fine-tuned CNNs and OpenCV, deployed with Streamlit.</p>
+                            <h4>Real-time Face Attendance System</h4>
+                            <p class="project-brief">A real-time Face Recognition application using fine-tuned CNNs and OpenCV and Transfer Learning technique, deployed with Streamlit.</p>
                             <p class="project-tools">Python, PyTorch, CNNs, OpenCV, FAISS, Numpy, Streamlit</p>
                         </div>
                         <button class="view-details-btn">View Details</button>  
@@ -520,6 +571,7 @@
                                     <span class="location">Ho Chi Minh, Viet Nam</span>
                                 </p>
                             </div>
+                            <p><b>GPA: 3.3/4.0</b></p>
                             <p>Pursuing a rigorous Computer Science program with a strong focus on Artificial Intelligence, Natural Language Processing, and Large Language Models. Developed practical experience through projects and coursework in machine learning, and NLP.</p>
                         </div>
                     </li>
@@ -537,6 +589,7 @@
                                     <span class="location">Quang Ngai, Viet Nam</span>
                                 </p>
                             </div>
+                            <p><b>GPA: 3.4/4.0</b></p>
                             <p>Selected into the IT major class of a nationally recognized gifted high school, where I built a strong foundation in algorithms, programming, and logical thinking through advanced coursework and competitive training.</p>
                         </div>
                     </li>
