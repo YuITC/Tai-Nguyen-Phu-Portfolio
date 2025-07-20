@@ -14,6 +14,7 @@
         <link rel="stylesheet" type="text/css" href="styles/nav.css">
         <link rel="stylesheet" type="text/css" href="styles/info.css">
         <link rel="stylesheet" type="text/css" href="styles/about.css">
+        <link rel="stylesheet" type="text/css" href="styles/skills.css">
         <link rel="stylesheet" type="text/css" href="styles/timeline.css">
         <link rel="stylesheet" type="text/css" href="styles/projects.css">
         <link rel="stylesheet" type="text/css" href="styles/publications.css">
@@ -71,6 +72,7 @@
                 <!-- Desktop Navigation -->
                 <div class="nav-right">
                     <a href="#about" class="nav-link">About</a>
+                    <a href="#skills" class="nav-link">Skills</a>
                     <!-- <a href="#blog" class="nav-link">Blog</a> -->
                     <a href="#projects" class="nav-link">Projects</a>
                     <!-- <a href="#publications" class="nav-link">Publications</a> -->
@@ -87,6 +89,7 @@
                     </button>
                     <div id="mobile-menu">
                         <a href="#about" class="nav-link">About</a>
+                        <a href="#skills" class="nav-link">Skills</a>
                         <!-- <a href="#blog" class="nav-link">Blog</a> -->
                         <a href="#projects" class="nav-link">Projects</a>
                         <!-- <a href="#publications" class="nav-link">Publications</a> -->
@@ -144,76 +147,79 @@
             </div>
 
 
-            <!-- ABOUT & SKILLS -->
-            <div class="section" id="about">
+            <!-- ABOUT -->
+            <section class="section" id="about">
                 <h2>About</h2>
                 <p>👋 Hi, I'm <strong>Tai Nguyen Phu</strong> &mdash; a 3rd-year <strong>Computer Science</strong> student passionate about <strong>Machine Learning</strong>, <strong>Natural Language Processing</strong>, and <strong>Large Language Models</strong>. <br>
                     I'm currently pursuing my <strong>Bachelor's</strong> at the University of Information Technology (VNUHCM &mdash; Vietnam), focusing on advancing AI innovation and real-world applications. <br> <br> 
                 </p>
+            </section>
+            
 
-                <h2>SKILLS</h2>
+            <!-- SKILLS -->
+            <section class="section" id="skills">
+                <h2>Skills</h2>
                 <div class="skills-container">
                     <div class="tab-buttons">
-                        <button class="tab-button active" data-tab="ml-dl">Machine Learning & Deep Learning</button>
-                        <button class="tab-button" data-tab="programming">Programming</button>
-                        <button class="tab-button" data-tab="dev-deploy">Development & Deployment</button>
-                        <button class="tab-button" data-tab="soft-skills">Soft Skills</button>
+                        <button class="tab-button active" data-tab="ai">AI/ML/DL</button>
+                        <button class="tab-button" data-tab="data">Data Engineering & Management</button>
+                        <button class="tab-button" data-tab="dev">Software Engineering & DevOps</button>
+                        <button class="tab-button" data-tab="soft">Core Computer Science & Soft Skills</button>
                     </div>
             
-                    <div id="ml-dl" class="tab-content active">
+                    <div id="ai" class="tab-content active">
                         <div class="skills-section">
                             <div class="skills">
-                                <div class="skill-item"><span>Large Language Models:</span> Transformers (Hugging Face), SentenceTransformer, Langchain, LoRA (PEFT), Promt Engineering, RAG</div>
-                                <div class="skill-item"><span>Agentic AI:</span> LangChain, LangSmith, LangGraph, smolagents</div>
-                                <div class="skill-item"><span>LLM APIs:</span> Groq API, OpenAI API, Gemini API</div>
-                                <div class="skill-item"><span>Vector Databases:</span> Chroma, FAISS</div>
-                                <div class="skill-item"><span>Natural Language Processing:</span> Hugging Face Tokenizers, NLTK, SpaCy, Regex</div>
-
-                                <div class="skill-item"><span>Machine Learning:</span> PyTorch, Scikit-learn, XGBoost</div>
-                                <div class="skill-item"><span>Computer Vision:</span> OpenCV, YOLO</div>
-                                <div class="skill-item"><span>Databases:</span> MySQL (basic), Firebase (basic)</div>
-                                
-                                <div class="skill-item"><span>Data Analysis:</span> NumPy, Pandas, Polars (basic)</div>
-                                <div class="skill-item"><span>Big Data:</span> Apache Spark (basic), Hadoop (basic)</div>
-                                <div class="skill-item"><span>Data Visualization:</span> Matplotlib, Seaborn, Plotly</div>
+                                <div class="skill-item"><span>Machine Learning: </span>Scikit-learn, XGBoost, LightGBM</div>
+                                <div class="skill-item"><span>Deep Learning: </span>PyTorch, TensorFlow</div>
+                                <div class="skill-item"><span>Model Optimization & Deployment (basic): </span>ONNX, TorchScript</div>
+                                <div class="skill-item"><span>Computer Vision: </span>OpenCV, YOLO</div>
+                                <div class="skill-item"><span>Natural Language Processing: </span>Hugging Face Tokenizers, NLTK, SpaCy, Regex, BM25</div>
+                                <div class="skill-item"><span>LLMs & GenAI: </span>Transformers (Hugging Face), SentenceTransformer, LoRA (PEFT), Quantization, Model Serving</div>
+                                <div class="skill-item"><span>Agentic & RAG Systems: </span>LangChain, LangSmith, LangGraph, smolagents, Pydantic, Prompt Engineering, RAG</div>
+                                <div class="skill-item"><span>LLM Inference APIs: </span>OpenAI API, Groq API, Gemini API</div>
                             </div>
                         </div>
                     </div>
             
-                    <div id="programming" class="tab-content">
+                    <div id="data" class="tab-content">
                         <div class="skills-section">
                             <div class="skills">
-                                <div class="skill-item"><span>Languages (proficient):</span> Python, C++, C</div>
-                                <div class="skill-item"><span>Language (basic):</span> SQL, Javascript, HTML, CSS</div>
+                                <div class="skill-item"><span>Data Manipulation & Analysis: </span>NumPy, Pandas, Polars</div>
+                                <div class="skill-item"><span>Data Visualization: </span>Matplotlib, Seaborn, Plotly</div>
+                                <div class="skill-item"><span>Big Data & ETL (basic): </span>Spark, Hadoop, MySQL, Firebase</div>
+                                <div class="skill-item"><span>Vector Databases: </span>Chroma, FAISS, Milvus, Weaviate, Pinecone</div>
                             </div>
                         </div>
                     </div>
             
-                    <div id="dev-deploy" class="tab-content">
+                    <div id="dev" class="tab-content">
                         <div class="skills-section">
                             <div class="skills">
-                                <div class="skill-item"><span>Version Control:</span> Git, GitHub, GitHub Actions</div>
-                                <div class="skill-item"><span>IDEs:</span> VS Code, Jupyter Notebooks</div>
-                                <div class="skill-item"><span>APIs: </span> FastAPI</div>
-                                <div class="skill-item"><span>Containerization:</span> Docker</div>
-                                <div class="skill-item"><span>Cloud:</span> AWS (basic)</div>
-                                <div class="skill-item"><span>MLOps:</span> Weights & Bias, MLflow (basic)</div>
-                                <div class="skill-item"><span>Operating Systems:</span> Ubuntu (basic), Windows</div>
+                                <div class="skill-item"><span>Programming Languages (proficient): </span>Python, C/C++</div>
+                                <div class="skill-item"><span>Programming Languages (basic): </span>Bash, SQL, JavaScript, HTML, CSS</div>
+                                <div class="skill-item"><span>Version Control & CI/CD: </span>Git, GitHub, GitHub Actions</div>
+                                <div class="skill-item"><span>Frameworks & API Development: </span>FastAPI, Flask</div>
+                                <div class="skill-item"><span>Containerization & Cloud (basic): </span>Docker, Kubernetes, AWS</div>
+                                <div class="skill-item"><span>MLOps & Experiment Tracking (basic): </span>Weights & Biases, MLflow</div>
+                                <div class="skill-item"><span>IDE & Tools: </span>VS Code, Cursor, Visual Studio, Jupyter Notebooks</div>
+                                <div class="skill-item"><span>Operating Systems (basic): </span>Linux/Ubuntu, Windows</div>
                             </div>
                         </div>
                     </div>
             
-                    <div id="soft-skills" class="tab-content">
+                    <div id="soft" class="tab-content">
                         <div class="skills-section">
                             <div class="skills">
-                                <div class="skill-item"><span>Languages:</span> English (IELTS 7.0)</div>
-                                <div class="skill-item"><span>Teamwork:</span> Presentation, Critical Thinking, Problem Solving</div>
+                                <div class="skill-item"><span>Languages: </span>English (IELTS 7.0)</div>
+                                <div class="skill-item"><span>Mathematics: </span>Linear Algebra, Discrete Math, Calculus, Statistics and Probability</div>
+                                <div class="skill-item"><span>CS Foundation: </span>Data Structures and Algorithms, Design and Analysis of Algorithms, Computational Thinking</div>
+                                <div class="skill-item"><span>Soft Skills: </span>Presentation, Critical Thinking, Problem Solving, Adaptability, Teamwork, Collaboration</div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-            </div>
+            </section>
             
 
             <!-- BLOG -->
