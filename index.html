@@ -76,8 +76,8 @@
                     <!-- <a href="#blog" class="nav-link">Blog</a> -->
                     <a href="#projects" class="nav-link">Projects</a>
                     <!-- <a href="#publications" class="nav-link">Publications</a> -->
-                    <a href="#certifications" class="nav-link">Certifications</a>
-                    <a href="#timeline" class="nav-link">Timeline</a>
+                    <!-- <a href="#certifications" class="nav-link">Certifications</a> -->
+                    <a href="#timeline" class="nav-link">Education & Achievements</a>
                 </div>
 
                 <!-- Mobile Navigation -->
@@ -93,8 +93,8 @@
                         <!-- <a href="#blog" class="nav-link">Blog</a> -->
                         <a href="#projects" class="nav-link">Projects</a>
                         <!-- <a href="#publications" class="nav-link">Publications</a> -->
-                        <a href="#certifications" class="nav-link">Certifications</a>
-                        <a href="#timeline" class="nav-link">Timeline</a>
+                        <!-- <a href="#certifications" class="nav-link">Certifications</a> -->
+                        <a href="#timeline" class="nav-link">Education & Achievements</a>
                     </div>
                 </div>
             </nav>
@@ -104,7 +104,6 @@
             <!-- HEADER -->
             <div id="dhead" class="container gradient-background">
                 <div class="row">
-                    <!-- Image -->
                     <div id="dpic">
                         <img src="assets/info/Avatar.jpg" alt="Tai Nguyen Phu - AI Engineer" />
                     </div>
@@ -129,10 +128,10 @@
                                 <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/gmail.svg" class="iico" alt="Contact me via email"/></a>
                         </div>
                         <div id="demail"></div>
-                        <a href="TaiNguyenPhu_AI_Engineer_Resume.pdf" target="_blank" rel="noopener noreferrer" class="resume-button">
-                            <img src="assets/resume.svg" class="iico" alt="PDF icon" />
-                            View My Resume
-                        </a>
+                            <a href="TaiNguyenPhu_AI_Engineer_Resume.pdf" target="_blank" rel="noopener noreferrer" class="resume-button">
+                                <img src="assets/resume.svg" class="iico" alt="PDF icon"/>
+                                View My Resume
+                            </a>
                     </div>
                 </div>
             </div>
@@ -241,32 +240,65 @@
             <div class="section" id="projects">
                 <h2>Projects</h2>
 
-                <h3>Undergraduate Projects - NLP/LLM Related</h3>
+                <h3><u>Natural Language Processing Related</u></h3>
                 <div class="project-grid">
 
                     <div class="project-card">
                         <div class="project-preview">
-                            <img loading="lazy" src="assets/projects/nlp_multimodal_rag.png" alt=" RAG Chatbot with Memory and Multimodal-Multilingual Support">
-                            <h4> RAG Chatbot with Memory and Multimodal-Multilingual Support ⚖️</h4>
-                            <p class="project-brief">A conservational RAG system,  support both multimodal (ability to process with text, images, tables, etc.) and multilingual, integrated with LangChain to provide Memory mechanism for chatbot. Helps user to have a deep understanding with scientific papers (or uploaded PDF file).</p>
-                            <p class="project-tools">Python, HuggingFace, SentenceTransformers, Gradio, Docker, Pandas, FAISS</p>
+                            <img loading="lazy" src="assets/projects/nlp/multimodal_rag.png" alt="RAG Chatbot with Memory and Multimodal-Multilingual Support">
+                            <h4>RAG Chatbot with Memory and Multimodal-Multilingual Support</h4>
+                            <p class="project-brief">An RAG application that enables natural language conversations with any kind of PDF files, processing not just text, but also images, tables, and diagrams within it. By extracting, analyzing, and contextualizing diverse content elements, arXivRAG provides comprehensive answers to complex research questions that extend beyond simple text-based search.</p>
+                            <p class="project-tools">Python, PyTorch, Unstructured, LangChain, Chroma, SentenceTransformers, FastAPI, arXiv API, Gemini API, Docker, AWS</p>
+                        </div>
+
+                        <button class="view-details-btn">View Details</button>
+
+                        <div class="project-details hidden">
+                            <div class="project-info">
+                                <p><strong>Date: </strong>May 2025 - July 2025</p>
+                            </div>
+
+                            <p class="project-description">
+                                <strong>What I have done:</strong>
+                                <ul>
+                                    <li>Built a RAG system for scientific PDF files that enables multimodal processing capabilities on text, table, and image data.</li>
+                                    <li>Designed a multilingual, multimodal retrieval pipeline using BGE-M3 embeddings and Chroma vector databases.</li>
+                                    <li>Conducted prompt engineering with multi-turn prompts and scenario-based testing using the Gemini Model API.</li>
+                                    <li>Implemented conversational memory management using LangChain's ConversationSummaryMemory, enabling context aware follow-up QA in chatbot interactions.</li>
+                                    <li>Implemented a citation-aware abstractive QA mechanism, mapping answers to source documents with text-level references for verifiability.</li>
+                                    <li>Developed an arXiv paper search engine, allowing dynamic retrieval of 150,000+ scientific publications in real-time.</li>
+                                    <li>Containerized and deployed a FastAPI-based end-to-end web application on AWS EC2 and Hugging Face Spaces for reproducibility and scalability.</li>
+                                </ul>
+                            </p>
+
+                            <div class="project-links">
+                                <a href="https://github.com/YuITC/arXivRAG-Multimodal-Conversational-RAG-System" target="_blank">Code</a>
+                                <!-- <a href="https://huggingface.co/spaces/YuITC/Vietnamese-Legal-Doc-Retrieval" target="_blank">Demo</a> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-preview">
+                            <img loading="lazy" src="assets/projects/nlp/legal_doc_retrieval.png" alt="Vietnamese Legal Document Semantic Retrieval System">
+                            <h4>Vietnamese Legal Document Semantic Retrieval System</h4>
+                            <p class="project-brief">A semantic retrieval system for Vietnamese legal documents using Sentence Transformers, fine-tuned on custom data and evaluated with MTEB, supporting scalable vector search via FAISS.</p>
+                            <p class="project-tools">Python, PyTorch, SentenceTransformers, MTEB, Accelerate, Gradio, Docker, Pandas, FAISS</p>
                         </div>
                         <button class="view-details-btn">View Details</button>
                         <div class="project-details hidden">
                             <div class="project-info">
-                                <p><strong>Semester: </strong>6</p>
-                                <p><strong>Team size: </strong>1</p>
                                 <p><strong>Date: </strong>Mar 2025 - Apr 2025</p>
-                                <p><strong>Course: </strong>None</p>
                             </div>
                             <p class="project-description">
-                                What I have done:
+                                <strong>What I have done:</strong>
                                 <ul>
-                                    <li>Fine-tuned a Sentence-BERT model (bert-base-multilingual-cased) on a 100K+ Vietnamese legal documents using CachedMultipleNegativesRankingLoss for domain-specific semantic retrieval.</li>
-                                    <li>Achieved significant performance boost on MTEB evaluation benchmark (NDCG@10: 60.4%, MAP@10: 53.6%) compared to pre-trained baseline (NDCG@10: 0.023%, MAP@10: 0.014%).</li>
-                                    <li>Designed and deployed a scalable semantic search pipeline using FAISS for real-time legal document retrieval.</li>
-                                    <li>Built a user-friendly web interface with Gradio to facilitate interactive query testing.</li>
-                                    <li>Containerized the full system with Docker to ensure reproducibility, portability, and seamless deployment.</li>
+                                    <li>Fine-tuned a multilingual Sentence-BERT model (<strong>bert-base-multilingual-cased</strong>) on a curated corpus of 100K+ Vietnamese legal documents using <strong>CachedMultipleNegativesRankingLoss</strong> to enhance domain-specific semantic retrieval performance.</li>
+                                    <li>Achieved substantial improvements on the MTEB benchmark (BKAI Legal Retrieval dataset), with <strong>NDCG@10: 60.4%</strong> and <strong>MAP@10: 53.6%</strong>, compared to the pre-trained baseline (NDCG@10: 0.023%, MAP@10: 0.014%).</li>
+                                    <li>Developed a full semantic retrieval pipeline, including data preprocessing, contrastive fine-tuning, evaluation with MTEB, and deployment.</li>
+                                    <li>Integrated a GPU-accelerated FAISS index for approximate nearest neighbor (ANN) search over 100K+ documents, enabling sub-second query latency.</li>
+                                    <li>Integrated a GPU-accelerated FAISS index for approximate nearest neighbor (ANN) search over 100K+ documents, enabling sub-second query latency.</li>
+                                    <li>Built a user-friendly web interface using Gradio for interactive semantic search, and containerized the entire system using <strong>Docker</strong> to ensure scalability, portability, and reproducibility across environments.</li>
                                 </ul>
                             </p>
                             <div class="project-links">
@@ -276,62 +308,53 @@
                         </div>
                     </div>
 
-
                     <div class="project-card">
                         <div class="project-preview">
-                            <img loading="lazy" src="assets/projects/nlp_legal_doc_retrieval.png" alt="Vietnames Legal Document Retrieval">
-                            <h4>Vietnames Legal Document Retrieval ⚖️</h4>
-                            <p class="project-brief">Semantic retrieval system for Vietnamese legal documents using Sentence Transformers, fine-tuned on custom data and evaluated with MTEB, supporting scalable vector search via FAISS.</p>
-                            <p class="project-tools">Python, HuggingFace, SentenceTransformers, Gradio, Docker, Pandas, FAISS</p>
+                            <img loading="lazy" src="assets/projects/nlp/dpr.png" alt="Dense Passage Retrieval">
+                            <h4>Dense Passage Retrieval for Open-Domain QA</h4>
+                            <p class="project-brief">PyTorch reimplementation of the paper "Dense Passage Retrieval for Open-Domain Question Answering" with modular design, low GPU optimization (T4), and accuracy improvements over the original paper for enhanced usability and performance.</p>
+                            <p class="project-tools">Python, PyTorch, Transformers, Accelerate, FAISS, Numpy, Pandas, Matplotlib</p>
                         </div>
-                        <button class="view-details-btn">View Details</button>
+                        <button class="view-details-btn">View Details</button>  
                         <div class="project-details hidden">
                             <div class="project-info">
-                                <p><strong>Semester: </strong>6</p>
-                                <p><strong>Team size: </strong>1</p>
-                                <p><strong>Date: </strong>Mar 2025 - Apr 2025</p>
-                                <p><strong>Course: </strong>None</p>
+                                <p><strong>Date: </strong>Dec 2024 - Jan 2025</p>
                             </div>
                             <p class="project-description">
-                                What I have done:
+                                <strong>What I have done:</strong>
                                 <ul>
-                                    <li>Fine-tuned a Sentence-BERT model (bert-base-multilingual-cased) on a 100K+ Vietnamese legal documents using CachedMultipleNegativesRankingLoss for domain-specific semantic retrieval.</li>
-                                    <li>Achieved significant performance boost on MTEB evaluation benchmark (NDCG@10: 60.4%, MAP@10: 53.6%) compared to pre-trained baseline (NDCG@10: 0.023%, MAP@10: 0.014%).</li>
-                                    <li>Designed and deployed a scalable semantic search pipeline using FAISS for real-time legal document retrieval.</li>
-                                    <li>Built a user-friendly web interface with Gradio to facilitate interactive query testing.</li>
-                                    <li>Containerized the full system with Docker to ensure reproducibility, portability, and seamless deployment.</li>
+                                    <li>Developed a modular dense passage retrieval system using dual-encoder Transformers (Hugging Face), enabling high-accuracy semantic search across large-scale QA datasets.</li>
+                                    <li>Improved top-k retrieval accuracy by ~1% over the original DPR baseline through custom training strategies and encoder tuning.</li>
+                                    <li>Integrated FAISS for efficient vector indexing and similarity search, supporting low-latency, scalable inference under constrained GPU memory.</li>
+                                    <li>Optimized training/inference on 16GB NVIDIA T4 GPU using mixed precision (FP16), dynamic batching, and memory-efficient PyTorch data pipelines.</li>
                                 </ul>
                             </p>
                             <div class="project-links">
-                                <a href="https://github.com/YuITC/Vietnamese-Legal-Doc-Retrieval" target="_blank">Code</a>
-                                <a href="https://huggingface.co/spaces/YuITC/Vietnamese-Legal-Doc-Retrieval" target="_blank">Demo</a>
+                                <a href="https://github.com/YuITC/Dense-Passage-Retrieval" target="_blank">Code</a>
+                                <a href="https://github.com/YuITC/Dense-Passage-Retrieval/blob/Main/Report.pdf" target="_blank">Report (Vietnamese)</a>
                             </div>
                         </div>
-                    </div>
+                    </div>                    
 
                     <div class="project-card">
                         <div class="project-preview">
-                            <img loading="lazy" src="assets/projects/nlp_semantic_book_rcm.png" alt="Semantic Book Recommendation System">
-                            <h4>Semantic Book Recommendation System 📚</h4>
-                            <p class="project-brief">Semantic book recommender using Sentence Transformers, Zero-shot genre classification, and Gradio UI—enhanced by EDA and Sentiment Analysis for personalized, label-free recommendations.</p>
-                            <p class="project-tools">Python, HuggingFace Transformers, Gradio, Pandas, NumPy, Promt Engineering</p>
+                            <img loading="lazy" src="assets/projects/nlp/book_rcm.png" alt="Semantic Book Recommendation System">
+                            <h4>Semantic Book Recommendation System</h4>
+                            <p class="project-brief">A semantic book recommendation system using Sentence Transformers, zero-shot genre classification, and Gradio UI-enhanced with EDA and sentiment analysis for personalized, label-free recommendations.</p>
+                            <p class="project-tools">Python, HuggingFace Transformers, LangChain, Pandas, NumPy, Gradio</p>
                         </div>
                         <button class="view-details-btn">View Details</button>
                         <div class="project-details hidden">
                             <div class="project-info">
-                                <p><strong>Semester: </strong>6</p>
-                                <p><strong>Team size: </strong>1</p>
                                 <p><strong>Date: </strong>Mar 2025 - Apr 2025</p>
-                                <p><strong>Course: </strong>None</p>
                             </div>
                             <p class="project-description">
-                                What I have done:
+                                <strong>What I have done:</strong>
                                 <ul>
-                                    <li>Developed an AI-powered book recommendation system that leverages semantic search and zero-shot classification to suggest books based on user input.</li>
-                                    <li>Utilized pre-trained transformer models to generate embeddings for book descriptions, enabling semantic similarity comparisons.</li>
-                                    <li>Implemented zero-shot classification to categorize books into genres without labeled training data.</li>
-                                    <li>Built an interactive web application using Gradio, allowing users to input descriptions and receive personalized book recommendations.</li>
-                                    <li>Conducted exploratory data analysis and sentiment analysis to enhance recommendation relevance.</li>
+                                    <li>Built an AI-driven semantic book recommendation system using Sentence Transformers for embedding-based similarity and zero-shot classification for genre prediction without labeled data.</li>
+                                    <li>Employed Hugging Face transformers to encode book descriptions, enabling context-aware, label-free recommendations via semantic search.</li>
+                                    <li>Designed a user-facing Gradio web app for interactive, real-time book suggestions based on free-form user input.</li>
+                                    <li>Applied exploratory data analysis (EDA) and sentiment analysis to refine recommendation quality and personalize user experience.</li>
                                 </ul>
                             </p>
                             <div class="project-links">
@@ -341,7 +364,7 @@
                         </div>
                     </div>
 
-                    <div class="project-card">
+                    <!-- <div class="project-card">
                         <div class="project-preview">
                             <img loading="lazy" src="assets/projects/nlp_job_application.png" alt="Job Application Assistant">
                             <h4>Job Application Assistant 💼</h4>
@@ -370,61 +393,51 @@
                                 <a href="https://job-application-ai-assistant.streamlit.app/" target="_blank">Demo</a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
+                </div>
 
+
+                <h3><u>Computer Vision Related</u></h3>
+                <div class="project-grid">
                     <div class="project-card">
                         <div class="project-preview">
-                            <img loading="lazy" src="assets/projects/nlp_dpr.png" alt="Dense Passage Retrieval">
-                            <h4>Dense Passage Retrieval 📃</h4>
-                            <p class="project-brief">PyTorch reimplementation of the paper "Dense Passage Retrieval for Open-Domain Question Answering" (2022)</p>
-                            <p class="project-tools">Python, PyTorch, FAISS, Transformers, Numpy, Pandas</p>
+                            <img loading="lazy" src="" alt="Real-time Face Attendance System">
+                            <h4>Real-time Face Attendance System</h4>
+                            <p class="project-brief">A real-time Face Recognition application using fine-tuned CNNs and OpenCV and Transfer Learning technique, deployed with Streamlit.</p>
+                            <p class="project-tools">Python, PyTorch, CNNs, OpenCV, FAISS, Numpy, Streamlit</p>
                         </div>
                         <button class="view-details-btn">View Details</button>  
                         <div class="project-details hidden">
                             <div class="project-info">
-                                <p><strong>Semester: </strong>5</p>
-                                <p><strong>Team size: </strong>4</p>
-                                <p><strong>Date: </strong>Jan 2025</p>
-                                <p><strong>Course: </strong>Natural Language Processing</p>
+                                <p><strong>Date: </strong>Apr 2025 - May 2025</p>
                             </div>
                             <p class="project-description">
                                 What I have done:
                                 <ul>
-                                    <li>Built a dense passage retrieval system using dual-encoder transformers (Hugging Face), enabling semantic search over large QA corpora.</li>
-                                    <li>Achieved ~1% improvement in top-k retrieval accuracy over the original DPR baseline.</li>
-                                    <li>Leveraged FAISS for fast vector similarity search, ensuring scalable, real-time response even under memory constraints.</li>
-                                    <li>Optimized training and inference on 16GB GPU, using batch scheduling, mixed precision, and memory-efficient data loaders.</li>
+                                    <li>...</li>
                                 </ul>
                             </p>
                             <div class="project-links">
-                                <a href="https://github.com/YuITC/Dense-Passage-Retrieval" target="_blank">Code</a>
-                                <a href="https://github.com/YuITC/Dense-Passage-Retrieval/blob/Main/Report.pdf" target="_blank">Report (Vietnamese)</a>
+                                <a href="https://github.com/YuITC/Face-Attendance-System" target="_blank">Code</a>
+                                <a href="" target="_blank">Demo</a>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-
-                <h3>Undergraduate Projects - CV Related</h3>
-                <div class="project-grid">
+                    </div>                    
 
                     <div class="project-card">
                         <div class="project-preview">
-                            <img loading="lazy" src="assets/projects/cv_ocr.png" alt="Scene Text Recognition">
-                            <h4>Scene Text Recognition 🎥</h4>
+                            <img loading="lazy" src="assets/projects/cv/ocr.png" alt="Scene Text Recognition">
+                            <h4>Scene Text Recognition System with YOLOv11m and CRNN</h4>
                             <p class="project-brief">A scalable OCR system using YOLOv11m and CRNN with CTC loss, deployed via FastAPI + Ray Serve, supporting real-time OCR with GPU acceleration and an interactive Streamlit UI.</p>
-                            <p class="project-tools">Python, PyTorch, YOLOv11m, CRNN, FastAPI, Ray Serve, Streamlit, OpenCV</p>
+                            <p class="project-tools">Python, PyTorch, YOLOv11m, OpenCV, CRNN, Scikit-learn, FastAPI, Ray Serve, Streamlit</p>
                         </div>
                         <button class="view-details-btn">View Details</button>  
                         <div class="project-details hidden">
                             <div class="project-info">
-                                <p><strong>Semester: </strong>6</p>
-                                <p><strong>Team size: </strong>1</p>
-                                <p><strong>Date: </strong>Feb 2025</p>
-                                <p><strong>Course: </strong>None</p>
+                                <p><strong>Date: </strong>Feb 2025 - Mar 2025</p>
                             </div>
                             <p class="project-description">
-                                What I have done:
+                                <strong>What I have done:</strong>
                                 <ul>
                                     <li>Developed a Scene Text Recognition pipeline using YOLOv11m for text detection and CRNN (ResNet34) for recognition, achieving ~88% precision on the ICDAR2003 dataset.</li>
                                     <li>Developed a scalable OCR API with FastAPI and Ray Serve, enabling autoscaling, GPU acceleration, and real-time text extraction.</li>
@@ -441,21 +454,18 @@
 
                     <div class="project-card">
                         <div class="project-preview">
-                            <img loading="lazy" src="assets/projects/cv_style_transfer.png" alt="Neural Style Transfer">
-                            <h4>Neural Style Transfer 🎨</h4>
+                            <img loading="lazy" src="assets/projects/cv/style_transfer.png" alt="Neural Style Transfer">
+                            <h4>Real-time Neural Style Transfer Application</h4>
                             <p class="project-brief">A real-time neural style transfer application using feed-forward networks and OpenCV, deployed with Streamlit.</p>
-                            <p class="project-tools">Python, PyTorch, VGG, TransformerNet, OpenCV, Numpy</p>
+                            <p class="project-tools">Python, PyTorch, VGG, TransformerNet, OpenCV, Numpy, Streamlit</p>
                         </div>
                         <button class="view-details-btn">View Details</button>  
                         <div class="project-details hidden">
                             <div class="project-info">
-                                <p><strong>Semester: </strong>5</p>
-                                <p><strong>Team size: </strong>4</p>
-                                <p><strong>Date: </strong>Nov 2024 - Jan 2025</p>
-                                <p><strong>Course: </strong>None</p>
+                                <p><strong>Date: </strong>Mar 2025</p>
                             </div>
                             <p class="project-description">
-                                What I have done:
+                                <strong>What I have done:</strong>
                                 <ul>
                                     <li>Developed a real-time neural style transfer pipeline using a lightweight feed-forward CNN trained on MS-COCO and stylized with artworks (e.g., Monet, Van Gogh).</li>
                                     <li>Integrated OpenCV for live webcam streaming and real-time frame capture, enabling dynamic style application on video feeds.</li>
@@ -469,45 +479,16 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="project-card">
-                        <div class="project-preview">
-                            <img loading="lazy" src="" alt="Real-time Face Attendance System">
-                            <h4>Real-time Face Attendance System</h4>
-                            <p class="project-brief">A real-time Face Recognition application using fine-tuned CNNs and OpenCV and Transfer Learning technique, deployed with Streamlit.</p>
-                            <p class="project-tools">Python, PyTorch, CNNs, OpenCV, FAISS, Numpy, Streamlit</p>
-                        </div>
-                        <button class="view-details-btn">View Details</button>  
-                        <div class="project-details hidden">
-                            <div class="project-info">
-                                <p><strong>Semester: </strong>6</p>
-                                <p><strong>Team size: </strong>3</p>
-                                <p><strong>Date: </strong>Apr 2025 - May 2025</p>
-                                <p><strong>Course: </strong>Pattern Recognition </p>
-                            </div>
-                            <p class="project-description">
-                                What I have done:
-                                <ul>
-                                    <li>...</li>
-                                </ul>
-                            </p>
-                            <div class="project-links">
-                                <a href="https://github.com/YuITC/Face-Attendance-System" target="_blank">Code</a>
-                                <a href="" target="_blank">Demo</a>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
 
 
-                <h3>Undergraduate Projects - Data Science Related</h3>
+                <h3><u>Data Science Related</u></h3>
                 <div class="project-grid">
 
                     <div class="project-card">
                         <div class="project-preview">
-                            <img loading="lazy" src="assets/projects/ds_ds_job_pred.png" alt="Data Science Job Salary Prediction">
-                            <h4> Data Science Job Salary Prediction 📊</h4>
+                            <img loading="lazy" src="assets/projects/ds/ds_job_pred.png" alt="Data Science Job Salary Prediction">
+                            <h4>Glassdoor 2024 Data Science Job Salary Prediction</h4>
                             <p class="project-brief">A salary prediction system for Data Science roles using XGBoost and Glassdoor data, featuring ML model comparison, hyperparameter tuning, and an interactive Streamlit app for real-time predictions.</p>
                             <p class="project-tools">Python, Scikit-learn, XGBoost, Pandas, NumPy, Matplotlib, Seaborn, Streamlit</p>
                         </div>
@@ -561,7 +542,7 @@
 
             <!-- TIMELINE -->
             <div class="section" id="timeline">
-                <h2>Timeline</h2>
+                <h2>Education & Achievements</h2>
                 <ul class="timeline">
                     <li class="entry">
                         <div class="entry-image">
@@ -577,8 +558,16 @@
                                     <span class="location">Ho Chi Minh, Viet Nam</span>
                                 </p>
                             </div>
-                            <p><b>GPA: 3.3/4.0</b></p>
-                            <p>Pursuing a rigorous Computer Science program with a strong focus on Artificial Intelligence, Natural Language Processing, and Large Language Models. Developed practical experience through projects and coursework in machine learning, and NLP.</p>
+                            <p><strong>GPA: 3.3/4.0</strong></p>
+                            <ul>
+                                <li>Pursuing a rigorous Computer Science program with a strong focus on Artificial Intelligence, Natural Language Processing, and Large Language Models. Developed practical experience through projects and coursework in machine learning, and NLP.</li>
+                                <li>Relevant Coursework: Linear Algebra, Discrete Math, Calculus, Statistics and Probability, Data structure and Algorithm, Design and Analysis of Algorithms</li>
+                            </ul>
+                            <p><strong>Achievements:</strong></p>
+                            <ul>
+                                <li><a href="https://www.kaggle.com/yuitc2502/competitions#:~:text=emoji_events-,Home%20Credit%20%2D%20Credit%20Risk%20Model%20Stability,-Create%20a%20model" target="_blank">Kaggle Competition: "Credit Risk Model Stability": Rank: 1096/3858</a></li>
+                                <li><a href="https://ctsv.uit.edu.vn/sites/default/files/202304/289_qd_dhcntt05_04_2023_scan.pdf" target="_blank">UIT Global Scholarship</a></li>
+                            </ul>
                         </div>
                     </li>
                     <li class="entry">
@@ -588,15 +577,23 @@
                         <div class="entry-content">
                             <div class="entry-dot"></div>
                             <div class="entry-header">
-                                <h3>IT Major student</h3>
+                                <h3>HighSchool Diploma (IT Major)</h3>
                                 <h4 class="organization">Le Khiet High School for the Gifted</h4>
                                 <p class="entry-meta">
                                     <span class="year">2019 - 2022</span>
                                     <span class="location">Quang Ngai, Viet Nam</span>
                                 </p>
                             </div>
-                            <p><b>GPA: 3.4/4.0</b></p>
+                            <p><strong>GPA: 3.4/4.0</strong></p>
                             <p>Selected into the IT major class of a nationally recognized gifted high school, where I built a strong foundation in algorithms, programming, and logical thinking through advanced coursework and competitive training.</p>
+                            <p><strong>Achievements:</strong></p>
+                            <ul>
+                                <li><a href="https://drive.google.com/file/d/1eHVhAYtBInV2HQsppoCxkzxd2f04yJBb/view" target="_blank">IELTS Academic: 7.0 Overall</a></li>
+                                <li>Member of the National Informatics Excellent Student Team</li>
+                                <li>Third Prize in the Provincial-level Excellent Student Contest in Informatics</li>
+                                <li>First Prize in the City-level Excellent Student Contest in Informatics</li>
+                                <li>First Prize in the School-level Excellent Student Contest in Informatics</li>
+                            </ul>
                         </div>
                     </li>
                 </ul>

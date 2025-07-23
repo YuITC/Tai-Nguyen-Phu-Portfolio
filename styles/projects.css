@@ -8,7 +8,9 @@
 .project-card {
     background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(52, 73, 94, 0.1);
+    /* box-shadow: 0 4px 6px rgba(52, 73, 94, 0.2); */
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25); */
+    border: 0.01px solid #ccc;
     overflow: hidden;
     transition: all 0.3s ease;
     display: flex;
@@ -18,11 +20,11 @@
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(52, 73, 94, 0.15);
+    box-shadow: 0 8px 15px rgba(52, 73, 94, 0.25);
 }
 
 .project-preview {
-    padding: 20px;
+    padding: 10px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -40,24 +42,25 @@
     font-size: 18px;
     color: var(--text-primary);
     margin: 0 0 10px 0;
-    /* Limit to 2 lines */
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+    line-clamp: 3;
     overflow: hidden;
     height: 3.5em; /* Adjust based on your line-height */
 }
 
 .project-brief {
-    font-size: 14px;
+    font-size: 12px;
     color: var(--text-secondary);
-    margin-bottom: 10px;
-    flex-grow: 1;
-    overflow: hidden;
-    /* Limit to 3 lines */
+    margin: 0 0 10px 0;
+    /* flex-grow: 1; */
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+    line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
     text-align: left; /* Align text to the left */
 }
 
@@ -65,7 +68,8 @@
     font-size: 12px;
     color: var(--primary-color);
     font-weight: 500;
-    margin-top: auto;
+    /* margin: 5px 10px 10px 5px; */
+    margin: 5% 0;
 }
 
 .view-details-btn {
@@ -110,7 +114,7 @@
     padding: 20px;
     border: 1px solid #888;
     width: 90%;
-    max-width: 800px;
+    max-width: 1200px;
     height: 90%;
     max-height: 80vh;
     border-radius: 10px;
@@ -121,10 +125,11 @@
 
 .modal-content img {
     width: 100%;
-    max-height: 300px;
+    max-height: 600px;
     object-fit: contain;
     border-radius: 8px;
     margin-bottom: 15px;
+    border: 1px solid #ccc;
 }
 
 .modal-content h3 {
@@ -135,7 +140,7 @@
 
 .modal-content .project-description {
     font-size: 16px;
-    color: var(--text-secondary);
+    /* color: var(--text-secondary); */
     line-height: 1.6;
 }
 

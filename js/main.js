@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
             modalContent.innerHTML = `
                 <h3>${projectTitle}</h3>
                 ${projectImage}
-                <div class="modal-brief">${projectBrief}</div>
+                <div class="modal-brief">${projectBrief}</div><br>
                 <div class="modal-tools"><strong>Tools:</strong> ${projectTools}</div>
                 ${projectDetails}
             `;
