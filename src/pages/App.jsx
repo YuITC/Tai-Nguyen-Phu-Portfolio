@@ -59,7 +59,7 @@ export default function App() {
                         <div className="relative">
                             <div className="absolute inset-0 -z-10 bg-gradient-to-br from-fuchsia-600/40 via-indigo-600/30 to-transparent blur-3xl opacity-40" />
                             <div className="w-80 h-80 mx-auto rounded-3xl bg-gradient-to-br from-fuchsia-500/30 to-indigo-500/30 border border-white/10 backdrop-blur-md flex items-center justify-center text-slate-300 text-xl font-medium shadow-xl shadow-black/50">
-                                <img src="/assets/me.png" alt="Portrait of Tai Nguyen Phu" className="w-full h-full object-cover rounded-3xl" />
+                                <img src="./assets/me.png" alt="Portrait of Tai Nguyen Phu" className="w-full h-full object-cover rounded-3xl" />
                             </div>
                         </div>
                     </div>
