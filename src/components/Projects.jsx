@@ -1,15 +1,14 @@
 import React, { useMemo, useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 import { projects } from "../data/projects.js";
-import { withBase } from "../utils/paths.js";
 
 function normalize(str) {
   return (str || "").toString().trim().toLowerCase();
 }
 
 function getVisual(item) {
-  if (typeof item === "string") return { src: withBase(item), alt: "" };
-  if (item && typeof item === "object") return { src: withBase(item.src), alt: item.alt || "" };
+  if (typeof item === "string") return { src: item, alt: "" };
+  if (item && typeof item === "object") return { src: item.src, alt: item.alt || "" };
   return null;
 }
 
