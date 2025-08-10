@@ -25,7 +25,7 @@ export const skillCategories = [
             },
             { 
                 name: 'Agentic & RAG Systems', 
-                tools: ['LangChain', 'LangGraph', 'LangSmith', 'smolagents', 'Pydantic'] 
+                tools: ['LangChain', 'LangGraph', 'LangSmith', 'smolagents'] 
             },
             { 
                 name: 'LLM Inference APIs', 
@@ -39,7 +39,7 @@ export const skillCategories = [
         groups: [
             { 
                 name: 'Data Manipulation & Analysis', 
-                tools: ['NumPy', 'Pandas', 'Polars', 'PyArrow'] 
+                tools: ['NumPy', 'Pandas', 'Polars', 'PyArrow', 'Pydantic'] 
             },
             { 
                 name: 'Data Visualization', 
