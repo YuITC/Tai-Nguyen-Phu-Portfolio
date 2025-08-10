@@ -20,24 +20,6 @@ export const projects = [
     ]
   },
   {
-    id: 'proj-face-attendance',
-    title: 'Real-time face attendance system with ArcFace and transfer learning technique',
-    dateRange: 'Apr 2025 - May 2025',
-    types: ['Computer Vision', 'Application', 'Face Recognition', 'CNN', 'Fine-tuning'],
-    description: 'A real-time Face Attendance application using Transfer Learning technique with ResNet, ArcFace, designed as a production-ready web application system for small-scale deployments.',
-    technologies: ['Python', 'PyTorch', 'ArcFace', 'CNNs', 'OpenCV', 'MTCNN', 'FAISS', 'Numpy', 'Flask', 'SQLite'],
-    repo: '#',
-    demo: '',
-    visuals: ['/src/assets/prj/cv_face_attendance.png'],
-    details: [
-      'Developed a Face Attendance System leveraging MTCNN for face detection and image data augmentation, enhancing model robustness in real-world conditions.',
-      'Implemented transfer learning on ResNet50d to extract 128-dimensional face embeddings, and trained with ArcFace loss for superior inter-class discrimination.',
-      'Achieved 80% accuracy and 0.88 AUC on the LFW benchmark dataset, demonstrating strong model generalization and reliability.',
-      'Built a real-time face search engine using FAISS with sliding-window voting, improving video-based recognition accuracy in live environments.',
-      'Designed and deployed a Flask-based web application with MVC architecture, SQLite database, user authentication, and role-based access control for attendance management.'
-    ]
-  },
-  {
     id: 'proj-legal-doc-retrieval',
     title: 'Vietnamese legal document semantic retrieval system',
     dateRange: 'Mar 2025 - Apr 2025',
@@ -53,6 +35,42 @@ export const projects = [
       'Built a full semantic retrieval pipeline: data preprocessing, model fine-tuning (contrastive learning), evaluation using MTEB, and deployment.',
       'Implemented a GPU-accelerated FAISS index with approximately 100K documents for ANN search with sub-second latency.',
       'Deployed an end-user interface using Gradio, containerized via Docker for scalable and reproducible deployment.'
+    ]
+  },
+  {
+    id: 'proj-dpr',
+    title: 'Dense passage retrieval for open-domain QA',
+    dateRange: 'Dec 2024 - Jan 2025',
+    types: ['NLP', 'Research', 'Retrieval', 'QA', 'LLM'],
+    description: 'PyTorch reimplementation of the paper "Dense Passage Retrieval for Open-Domain Question Answering" with modular design, low GPU optimization (T4), and accuracy improvements over the original paper for enhanced usability and performance.',
+    technologies: ['Python', 'PyTorch', 'Transformers', 'Accelerate', 'FAISS', 'Numpy', 'Pandas', 'Matplotlib'],
+    repo: 'https://github.com/YuITC/Dense-Passage-Retrieval',
+    demo: '',
+    visuals: ['/src/assets/prj/nlp_dpr.png'],
+    details: [
+      'Developed a modular dense passage retrieval system using dual-encoder Transformers (Hugging Face), enabling high-accuracy semantic search across large-scale QA datasets.',
+      'Improved top-k retrieval accuracy by ~1% over the original DPR baseline through custom training strategies and encoder tuning.',
+      'Integrated FAISS for efficient vector indexing and similarity search, supporting low-latency, scalable inference under constrained GPU memory.',
+      'Optimized training/inference on 16GB NVIDIA T4 GPU using mixed precision (FP16), dynamic batching, and memory-efficient PyTorch data pipelines.',
+      'Report: https://github.com/YuITC/Dense-Passage-Retrieval/blob/Main/Report.pdf'
+    ]
+  },
+  {
+    id: 'proj-face-attendance',
+    title: 'Real-time face attendance system with ArcFace and transfer learning technique',
+    dateRange: 'Apr 2025 - May 2025',
+    types: ['Computer Vision', 'Application', 'Face Recognition', 'CNN', 'Fine-tuning'],
+    description: 'A real-time Face Attendance application using Transfer Learning technique with ResNet, ArcFace, designed as a production-ready web application system for small-scale deployments.',
+    technologies: ['Python', 'PyTorch', 'ArcFace', 'CNNs', 'OpenCV', 'MTCNN', 'FAISS', 'Numpy', 'Flask', 'SQLite'],
+    repo: '#',
+    demo: '',
+    visuals: ['/src/assets/prj/cv_face_attendance.png'],
+    details: [
+      'Developed a Face Attendance System leveraging MTCNN for face detection and image data augmentation, enhancing model robustness in real-world conditions.',
+      'Implemented transfer learning on ResNet50d to extract 128-dimensional face embeddings, and trained with ArcFace loss for superior inter-class discrimination.',
+      'Achieved 80% accuracy and 0.88 AUC on the LFW benchmark dataset, demonstrating strong model generalization and reliability.',
+      'Built a real-time face search engine using FAISS with sliding-window voting, improving video-based recognition accuracy in live environments.',
+      'Designed and deployed a Flask-based web application with MVC architecture, SQLite database, user authentication, and role-based access control for attendance management.'
     ]
   },
   {
@@ -89,24 +107,6 @@ export const projects = [
       'Implemented CTC loss and transformer-based text sequence modeling to improve recognition accuracy in natural scene images.',
       'Developed an interactive Streamlit application for instant OCR from image uploads or URLs, enhancing usability and accessibility.',
       'Optimized the end-to-end pipeline for low-latency inference, ensuring robust performance in high-throughput production environments.'
-    ]
-  },
-  {
-    id: 'proj-dpr',
-    title: 'Dense passage retrieval for open-domain QA',
-    dateRange: 'Dec 2024 - Jan 2025',
-    types: ['NLP', 'Research', 'Retrieval', 'QA', 'LLM'],
-    description: 'PyTorch reimplementation of the paper "Dense Passage Retrieval for Open-Domain Question Answering" with modular design, low GPU optimization (T4), and accuracy improvements over the original paper for enhanced usability and performance.',
-    technologies: ['Python', 'PyTorch', 'Transformers', 'Accelerate', 'FAISS', 'Numpy', 'Pandas', 'Matplotlib'],
-    repo: 'https://github.com/YuITC/Dense-Passage-Retrieval',
-    demo: '',
-    visuals: ['/src/assets/prj/nlp_dpr.png'],
-    details: [
-      'Developed a modular dense passage retrieval system using dual-encoder Transformers (Hugging Face), enabling high-accuracy semantic search across large-scale QA datasets.',
-      'Improved top-k retrieval accuracy by ~1% over the original DPR baseline through custom training strategies and encoder tuning.',
-      'Integrated FAISS for efficient vector indexing and similarity search, supporting low-latency, scalable inference under constrained GPU memory.',
-      'Optimized training/inference on 16GB NVIDIA T4 GPU using mixed precision (FP16), dynamic batching, and memory-efficient PyTorch data pipelines.',
-      'Report: https://github.com/YuITC/Dense-Passage-Retrieval/blob/Main/Report.pdf'
     ]
   },
   {

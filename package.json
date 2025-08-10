@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "homepage": "https://yuitc.github.io/portfolio/",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -11,7 +11,6 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "gh-pages": "^6.3.0",
     "lucide-react": "^0.539.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
