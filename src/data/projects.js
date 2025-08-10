@@ -8,7 +8,7 @@ export const projects = [
     technologies: ['Python', 'PyTorch', 'Unstructured', 'LangChain', 'Chroma', 'SentenceTransformers', 'FastAPI', 'arXiv API', 'Gemini API', 'Docker', 'AWS'],
     repo: 'https://github.com/YuITC/arXivRAG-Multimodal-Conversational-RAG-System',
     demo: '',
-    visuals: ['/assets/prj/nlp_multimodal_rag.png'],
+    visuals: ['/src/assets/prj/nlp_multimodal_rag.png'],
     details: [
       'Built a RAG system for scientific PDF files that enables multimodal processing capabilities on text, table, and image data.',
       'Designed a multilingual, multimodal retrieval pipeline using BGE-M3 embeddings and Chroma vector databases.',
@@ -28,7 +28,7 @@ export const projects = [
     technologies: ['Python', 'PyTorch', 'ArcFace', 'CNNs', 'OpenCV', 'MTCNN', 'FAISS', 'Numpy', 'Flask', 'SQLite'],
     repo: '#',
     demo: '',
-    visuals: ['assets/prj/cv_face_attendance.png'],
+    visuals: ['/src/assets/prj/cv_face_attendance.png'],
     details: [
       'Developed a Face Attendance System leveraging MTCNN for face detection and image data augmentation, enhancing model robustness in real-world conditions.',
       'Implemented transfer learning on ResNet50d to extract 128-dimensional face embeddings, and trained with ArcFace loss for superior inter-class discrimination.',
@@ -46,7 +46,7 @@ export const projects = [
     technologies: ['Python', 'PyTorch', 'SentenceTransformers', 'MTEB', 'Accelerate', 'Gradio', 'Docker', 'Pandas', 'FAISS'],
     repo: 'https://github.com/YuITC/Vietnamese-Legal-Doc-Retrieval',
     demo: 'https://huggingface.co/spaces/YuITC/Vietnamese-Legal-Doc-Retrieval',
-    visuals: ['/assets/prj/nlp_legal_doc_retrieval.png'],
+    visuals: ['/src/assets/prj/nlp_legal_doc_retrieval.png'],
     details: [
       'Fine-tuned a multilingual SBERT model on a curated Vietnamese legal corpus to improve domain-specific retrieval accuracy.',
       'Achieved NDCG@10: 60.4% and MAP@10: 53.6% on the MTEB benchmark (BKAI Legal Retrieval dataset).',
@@ -64,7 +64,7 @@ export const projects = [
     technologies: ['Python', 'PyTorch', 'VGG', 'TransformerNet', 'OpenCV', 'Numpy', 'Streamlit'],
     repo: 'https://github.com/YuITC/Realtime-Style-Transfer',
     demo: 'https://realtime-style-transfer.streamlit.app/',
-    visuals: ['/assets/prj/cv_style_transfer.png'],
+    visuals: ['/src/assets/prj/cv_style_transfer.png'],
     details: [
       'Engineered a real-time neural style transfer system using a lightweight feed-forward CNN trained on MS-COCO and fine-tuned with artistic styles (e.g., Monet, Van Gogh).',
       'Integrated OpenCV for live webcam streaming and real-time frame processing, enabling seamless artistic transformation on video feeds.',
@@ -82,7 +82,7 @@ export const projects = [
     technologies: ['Python', 'PyTorch', 'YOLOv11m', 'OpenCV', 'CRNN', 'Scikit-learn', 'FastAPI', 'Ray Serve', 'Streamlit'],
     repo: 'https://github.com/YuITC/Scene-Text-Recognition',
     demo: 'https://scene-text-recognition.streamlit.app/',
-    visuals: ['/assets/prj/cv_ocr.png'],
+    visuals: ['/src/assets/prj/cv_ocr.png'],
     details: [
       'Built a Scene Text Recognition pipeline integrating YOLOv11m for text detection and CRNN (ResNet34) for recognition, achieving ~88% precision on the ICDAR2003 benchmark.',
       'Designed and deployed a scalable OCR API with FastAPI and Ray Serve, supporting autoscaling, GPU acceleration, and real-time text extraction.',
@@ -100,7 +100,7 @@ export const projects = [
     technologies: ['Python', 'PyTorch', 'Transformers', 'Accelerate', 'FAISS', 'Numpy', 'Pandas', 'Matplotlib'],
     repo: 'https://github.com/YuITC/Dense-Passage-Retrieval',
     demo: '',
-    visuals: ['/assets/prj/nlp_dpr.png'],
+    visuals: ['/src/assets/prj/nlp_dpr.png'],
     details: [
       'Developed a modular dense passage retrieval system using dual-encoder Transformers (Hugging Face), enabling high-accuracy semantic search across large-scale QA datasets.',
       'Improved top-k retrieval accuracy by ~1% over the original DPR baseline through custom training strategies and encoder tuning.',
@@ -118,7 +118,7 @@ export const projects = [
     technologies: ['Python', 'Scikit-learn', 'XGBoost', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'Streamlit'],
     repo: 'https://github.com/YuITC/2024-DataScience-Salaries-Analysis',
     demo: 'https://data-science-salary-predict.streamlit.app/',
-    visuals: ['/assets/prj/ds_data_job_pred.png'],
+    visuals: ['/src/assets/prj/ds_data_job_pred.png'],
     details: [
       'Developed a machine learning-powered salary prediction system trained on Glassdoor 2024 Data Science job listings.',
       'Conducted comprehensive EDA and feature engineering, including data preprocessing, categorical encoding, missing value imputation, and creation of interaction terms to capture complex salary dynamics.',
