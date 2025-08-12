@@ -37,16 +37,16 @@ export const timeline = [
         link: 'https://drive.google.com/file/d/1eHVhAYtBInV2HQsppoCxkzxd2f04yJBb/view'
       },
       {
-        name: 'Member of the National Informatics Excellent Student Team',
+        name: 'Member of the National IT Excellent Student Team',
       },
       {
-        name: 'Third Prize in the Provincial-level Excellent Student Contest in Informatics'
+        name: 'Third Prize in the Provincial-level IT Excellent Student Contest'
       },
       {
-        name: 'First Prize in the City-level Excellent Student Contest in Informatics'
+        name: 'First Prize in the City-level IT Excellent Student Contest'
       },
       {
-        name: 'First Prize in the School-level Excellent Student Contest in Informatics'
+        name: 'First Prize in the School-level IT Excellent Student Contest'
       }
     ]
   }

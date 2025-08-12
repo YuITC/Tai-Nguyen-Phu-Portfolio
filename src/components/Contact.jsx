@@ -40,7 +40,7 @@ export default function Contact(){
           <ul className="text-sm space-y-1 text-slate-300">
             <li><span className="text-slate-400">Location:</span> Ho Chi Minh City, Vietnam</li>
             <li><span className="text-slate-400">Email:</span> <a href="mailto:tainguyenphu@gmail.com" className="underline decoration-dotted hover:text-fuchsia-200">tainguyenphu@gmail.com</a></li>
-            <li><span className="text-slate-400">LinkedIn:</span> <a href="https://www.linkedin.com/in/tainguyenphu2502/" className="underline decoration-dotted hover:text-fuchsia-200">linkedin.com/in/tainguyenphu2502</a></li>
+            <li><span className="text-slate-400">LinkedIn:</span> <a href="https://www.linkedin.com/in/tainguyen2502/" className="underline decoration-dotted hover:text-fuchsia-200">linkedin.com/in/tainguyen2502</a></li>
             <li><span className="text-slate-400">GitHub:</span> <a href="https://github.com/YuITC" className="underline decoration-dotted hover:text-fuchsia-200">github.com/YuITC</a></li>
             <li><span className="text-slate-400">Facebook:</span> <a href="https://www.facebook.com/taiphu2502/" className="underline decoration-dotted hover:text-fuchsia-200">facebook.com/taiphu2502</a></li>
           </ul>
