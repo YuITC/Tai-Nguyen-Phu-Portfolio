@@ -32,14 +32,14 @@ export const certifications = [
     id: 'cert-computational-thinking', 
     name: 'Problem Solving Using Computational Thinking', 
     org: 'Coursera / University of Michigan', 
-    date: '2024', 
+    date: 'Jun 2024', 
     link: 'https://www.coursera.org/account/accomplishments/verify/UZ23GF4LB8U5' 
   },
   { 
     id: 'cert-ielts', 
     name: 'International English Language Testing System', 
     org: 'British Council', 
-    date: '2022', 
+    date: 'Mar 2022', 
     note: ['7.0 Overall'],
     link: 'https://drive.google.com/file/d/1eHVhAYtBInV2HQsppoCxkzxd2f04yJBb/view?usp=drive_link' 
   },
