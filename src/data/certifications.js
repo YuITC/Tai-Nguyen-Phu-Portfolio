@@ -10,7 +10,7 @@ export const certifications = [
       'Natural Language Processing with Sequence Models',
       'Natural Language Processing with Attention Models'
     ],
-    link: 'https://www.coursera.org/account/accomplishments/specialization/MLG19H9E3KPF#' 
+    link: 'https://www.coursera.org/account/accomplishments/specialization/Z3O66DA9IU9P' 
   },
   { 
     id: 'cert-dl', 
@@ -18,7 +18,7 @@ export const certifications = [
     org: 'Coursera / DeepLearning.AI', 
     date: 'Aug 2025', 
     note: ['Neural Networks and Deep Learning', 'Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization', 'Structuring Machine Learning Projects', 'Convolutional Neural Networks', 'Sequence Models'],
-    link: 'https://www.coursera.org/account/accomplishments/specialization/MLG19H9E3KPF#' 
+    link: 'https://www.coursera.org/account/accomplishments/specialization/YRPSNXWK3C2K' 
   },
   { 
     id: 'cert-ml', 
@@ -26,7 +26,7 @@ export const certifications = [
     org: 'Coursera / DeepLearning.AI', 
     date: 'Jul 2025', 
     note: ['Supervised Machine Learning: Regression and Classification', 'Advanced Learning Algorithms', 'Unsupervised Learning, Recommenders, Reinforcement Learning'],
-    link: 'https://www.coursera.org/account/accomplishments/specialization/MLG19H9E3KPF#' 
+    link: 'https://www.coursera.org/account/accomplishments/specialization/MLG19H9E3KPF' 
   },
   { 
     id: 'cert-computational-thinking', 
