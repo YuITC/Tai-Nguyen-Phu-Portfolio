@@ -39,7 +39,7 @@ export default function App() {
 									className="p-3 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 hover:border-fuchsia-400/40 transition">
                                     <Github size={20} />
                                 </a>
-                                <a aria-label="Facebook" href="https://www.facebook.com/taiphu2502/" 
+                                <a aria-label="Facebook" href="https://www.facebook.com/taingph2502/" 
 									className="p-3 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 hover:border-fuchsia-400/40 transition">
                                     <Facebook size={20} />
                                 </a>
