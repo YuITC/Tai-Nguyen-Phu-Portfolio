@@ -5,11 +5,11 @@ export const skillCategories = [
         groups: [
             { 
                 name: 'Machine Learning', 
-                tools: ['Scikit-learn', 'XGBoost', 'LightGBM', 'CatBoost'] 
+                tools: ['Scikit-learn', 'XGBoost', 'LightGBM', 'CatBoost', 'Optuna'] 
             },
             { 
                 name: 'Deep Learning', 
-                tools: ['PyTorch', 'TensorFlow', 'PyTorch Lightning', 'JAX'] 
+                tools: ['PyTorch', 'TensorFlow', 'PyTorch Lightning'] 
             },
             { 
                 name: 'Computer Vision', 
@@ -17,11 +17,11 @@ export const skillCategories = [
             },
             { 
                 name: 'Natural Language Processing', 
-                tools: ['Hugging Face Tokenizers', 'Transformers', 'SpaCy', 'SentencePiece', 'tiktoken'] 
+                tools: ['Hugging Face Tokenizers', 'SpaCy', 'SentencePiece', 'tiktoken'] 
             },
             { 
                 name: 'LLMs & Generative AI', 
-                tools: ['SentenceTransformer', 'PEFT (LoRA, QLoRA)', 'Prompt Engineering'] 
+                tools: ['Transformers', 'SentenceTransformer', 'PEFT (LoRA, QLoRA)', 'SFT', 'Prompt Engineering'] 
             },
             { 
                 name: 'Agentic & RAG Systems', 
@@ -29,7 +29,7 @@ export const skillCategories = [
             },
             { 
                 name: 'LLM Inference APIs', 
-                tools: ['OpenAI API', 'Anthropic API', 'Groq API', 'Gemini API'] 
+                tools: ['OpenAI API/SDK', 'Groq API', 'Gemini API'] 
             }
         ]
     },
@@ -39,23 +39,19 @@ export const skillCategories = [
         groups: [
             { 
                 name: 'Data Manipulation & Analysis', 
-                tools: ['NumPy', 'Pandas', 'Polars', 'PyArrow', 'Pydantic'] 
+                tools: ['NumPy', 'Pandas', 'Polars', 'PyArrow', 'Pydantic', 'Selenium'] 
             },
             { 
                 name: 'Data Visualization', 
                 tools: ['Matplotlib', 'Seaborn', 'Plotly'] 
             },
             {
-                name: 'Big Data (basic)',
-                tools: ['Spark', 'Hadoop']
-            },
-            {
                 name: 'Datastores & ETL (basic)',
-                tools: ['MySQL', 'MongoDB', 'Firebase', 'Apache Airflow']
+                tools: ['MySQL', 'Firebase']
             },
             { 
                 name: 'Vector Databases (basic)', 
-                tools: ['FAISS', 'Chroma', 'Milvus', 'Weaviate', 'Pinecone'] 
+                tools: ['FAISS', 'Chroma', 'Milvus'] 
             }
         ]
     },
@@ -81,7 +77,7 @@ export const skillCategories = [
             },
             { 
                 name: 'Containerization & Cloud (basic)', 
-                tools: ['Docker', 'Kubernetes', 'AWS'] 
+                tools: ['Docker', 'AWS'] 
             },
             { 
                 name: 'MLOps & Experiment Tracking (basic)', 
