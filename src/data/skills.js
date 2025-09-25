@@ -39,7 +39,7 @@ export const skillCategories = [
         groups: [
             { 
                 name: 'Data Manipulation & Analysis', 
-                tools: ['NumPy', 'Pandas', 'Polars', 'PyArrow', 'Pydantic', 'Selenium'] 
+                tools: ['NumPy', 'Pandas', 'Spark', 'Polars', 'PyArrow', 'Pydantic', 'Selenium'] 
             },
             { 
                 name: 'Data Visualization', 
@@ -65,7 +65,7 @@ export const skillCategories = [
             },
             { 
                 name: 'Programming Languages (Basic)', 
-                tools: ['Bash', 'SQL', 'TypeScript/JavaScript', 'HTML', 'CSS'] 
+                tools: ['Bash', 'SQL', 'TypeScript/JavaScript', 'React', 'HTML', 'CSS'] 
             },
             { 
                 name: 'Frameworks & API Development', 
