@@ -9,7 +9,7 @@ export const timeline = [
       'Pursuing a rigorous Computer Science program with a strong focus on Artificial Intelligence and Natural Language Processing. Developed practical experience through relevant projects and coursework.',
       'Relevant Coursework: Linear Algebra, Discrete Math, Calculus, Statistics and Probability, Data structure and Algorithm, Design and Analysis of Algorithms.'
     ],
-    highlightKeywords: ['GPA: 3.3/4.0'],
+    highlightKeywords: ['GPA: 3.5/4.0'],
     achievements: [
       {
         name: 'Kaggle Competition: "Credit Risk Model Stability": Rank: 1096/3858',
