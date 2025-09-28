@@ -54,7 +54,7 @@ export default function App() {
                             </div>
 
                             <div>
-                                <a href="./assets/resumes/resume-09_25_2025.pdf" className="inline-block px-6 py-2 rounded-md bg-gradient-to-r from-fuchsia-600 to-indigo-600 hover:from-fuchsia-500 hover:to-indigo-500 font-medium">
+                                <a href="./assets/resumes/resume.pdf" className="inline-block px-6 py-2 rounded-md bg-gradient-to-r from-fuchsia-600 to-indigo-600 hover:from-fuchsia-500 hover:to-indigo-500 font-medium">
                                     View my Resume
                                 </a>
                             </div>

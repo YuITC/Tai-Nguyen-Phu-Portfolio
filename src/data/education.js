@@ -5,7 +5,7 @@ export const timeline = [
     degree: 'Bachelor of Computer Science (3rd Year)',
     dateRange: 'Sep 2022 - Nov 2025 (wait for graduation)',
     educationStatus: [
-      'GPA: 3.3/4.0',
+      'GPA: 3.5/4.0',
       'Pursuing a rigorous Computer Science program with a strong focus on Artificial Intelligence and Natural Language Processing. Developed practical experience through relevant projects and coursework.',
       'Relevant Coursework: Linear Algebra, Discrete Math, Calculus, Statistics and Probability, Data structure and Algorithm, Design and Analysis of Algorithms.'
     ],
