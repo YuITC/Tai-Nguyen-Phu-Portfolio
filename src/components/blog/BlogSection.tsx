@@ -1,13 +1,14 @@
 "use client";
 
 import { motion } from "motion/react";
-import { PenLine } from "lucide-react";
+import { PenLine, BookOpen } from "lucide-react";
+import SectionTitle from "@/components/ui/SectionTitle";
 
 export default function BlogSection() {
   return (
     <section>
       <motion.header initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
-        <h2 className="font-[family-name:var(--font-heading)] text-2xl font-bold mb-6">Blog</h2>
+        <SectionTitle title="Blog" icon={BookOpen} />
       </motion.header>
 
       <motion.div

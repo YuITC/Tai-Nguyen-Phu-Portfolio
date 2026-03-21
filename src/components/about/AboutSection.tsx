@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
-import { BrainCircuit, Bot, FlaskConical } from "lucide-react";
+import { BrainCircuit, Bot, FlaskConical, User } from "lucide-react";
 import { aboutText } from "@/data/personal";
 import GlassCard from "@/components/ui/GlassCard";
 import SectionTitle from "@/components/ui/SectionTitle";
@@ -35,9 +35,7 @@ export default function AboutSection() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4 }}
       >
-        <h2 className="font-[family-name:var(--font-heading)] text-2xl font-bold mb-6">
-          About Me
-        </h2>
+        <SectionTitle title="About Me" icon={User} />
       </motion.header>
 
       <motion.div

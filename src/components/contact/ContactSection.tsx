@@ -12,11 +12,13 @@ import {
   Loader2,
   CheckCircle2,
   AlertCircle,
+  MessageSquare,
 } from "lucide-react";
 import { socialLinks } from "@/data/personal";
 import { sendContactEmail } from "@/lib/emailjs";
 import GlassCard from "@/components/ui/GlassCard";
 import HuggingFaceIcon from "@/components/ui/HuggingFaceIcon";
+import SectionTitle from "@/components/ui/SectionTitle";
 
 const contactIconMap: Record<string, React.ReactNode> = {
   github: <Github size={20} />,
@@ -70,7 +72,7 @@ export default function ContactSection() {
   return (
     <section>
       <motion.header initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
-        <h2 className="font-[family-name:var(--font-heading)] text-2xl font-bold mb-6">Contact</h2>
+        <SectionTitle title="Contact" icon={MessageSquare} />
       </motion.header>
 
       {/* Social links */}
