@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Sora, DM_Sans, JetBrains_Mono } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
 const sora = Sora({
@@ -45,7 +46,10 @@ export default function RootLayout({
       lang="en"
       className={`${sora.variable} ${dmSans.variable} ${jetbrainsMono.variable}`}
     >
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        {children}
+        <SpeedInsights />
+      </body>
     </html>
   );
 }
