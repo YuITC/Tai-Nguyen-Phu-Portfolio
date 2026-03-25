@@ -15,7 +15,7 @@ export const educationEntries: EducationEntry[] = [
     gpa: "3.5/4.0",
     achievements: [
       "Graduated with honors (very good)",
-      'Kaggle Competition: "Home Credit — Credit Risk Model Stability": Rank 1096/3858',
+      'Kaggle Competition: "Home Credit — Credit Risk Model Stability"',
       "UIT Global Scholarship",
     ],
   },
