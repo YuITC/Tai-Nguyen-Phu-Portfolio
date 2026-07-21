@@ -71,7 +71,7 @@ _Le Khiet High School for the Gifted | Sep 2019 — Jun 2022_
 
 - GPA: 3.5/4.0
 - Graduated with honors (very good)
-- Second Prize — Provincial Informatics Competition for Excellent Students
+- First Prize — Provincial Informatics Competition for Excellent Students
 - Second Prize — Provincial Youth Informatics Competition
 - First Prize — City-level Informatics Competition for Excellent Students
 - First Prize — School-level Informatics Competition for Excellent Students
@@ -325,14 +325,14 @@ _English Team Member | Sep 2022 — Feb 2023_
 
 ### CS-UIT AI Club
 
-_Member | Sep 2022 — Mar 2023_
+_Member | Sep 2022 — Feb 2023_
 
 - Researched and presented key AI academic papers during club seminars to broaden technical knowledge.
 - Participated in AI competitions to apply theoretical concepts into solving practical, data-driven problems.
 
 ### Class Youth Union Committee
 
-_Committee Member | Sep 2022 — Mar 2023_
+_Committee Member | Sep 2022 — Feb 2023_
 
 - Assisted in planning and organizing class-level academic, cultural, and volunteering events.
 - Served as the primary liaison between the Faculty and the class to streamline communication and increase event participation.

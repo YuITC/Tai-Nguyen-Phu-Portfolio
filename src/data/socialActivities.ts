@@ -21,7 +21,7 @@ export const socialActivityEntries: SocialActivityEntry[] = [
   {
     title: "CS-UIT AI Club",
     role: "Member",
-    period: "Sep 2022 — Mar 2023",
+    period: "Sep 2022 — Feb 2023",
     bullets: [
       "Researched and presented key AI academic papers during club seminars to broaden technical knowledge.",
       "Participated in AI competitions to apply theoretical concepts into solving practical, data-driven problems.",
@@ -30,7 +30,7 @@ export const socialActivityEntries: SocialActivityEntry[] = [
   {
     title: "Class Youth Union Committee",
     role: "Committee Member",
-    period: "Sep 2022 — Mar 2023",
+    period: "Sep 2022 — Feb 2023",
     bullets: [
       "Assisted in planning and organizing class-level academic, cultural, and volunteering events.",
       "Served as the primary liaison between the Faculty and the class to streamline communication and increase event participation.",
