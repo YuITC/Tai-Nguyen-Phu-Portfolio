@@ -101,7 +101,7 @@ export const PROJECT_DEFINITIONS: ProjectDefinition[] = [
       "Built a VRAM-aware runtime manager and local LLM translation workflow with Ollama and Qwen 3.5, dynamically scaling image resolution and preserving cross-panel narrative consistency.",
     ],
     categories: ["Computer Vision", "LLM", "Generative AI"],
-    isPinned: true,
+    isPinned: false,
   },
   {
     repoName: "Vietnamese-Legal-RAG-System",
@@ -279,7 +279,7 @@ export const PROJECT_DEFINITIONS: ProjectDefinition[] = [
       "Deep Learning",
       "Research",
     ],
-    isPinned: false,
+    isPinned: true,
   },
   {
     repoName: "ai-news-aggregator",
@@ -289,14 +289,7 @@ export const PROJECT_DEFINITIONS: ProjectDefinition[] = [
     description:
       "An automated AI news briefing system that aggregates multi-source updates, generates concise technical summaries, ranks them by reader relevance, and emails a curated digest.",
     fallbackLanguage: "Python",
-    techStack: [
-      "OpenAI",
-      "Pydantic",
-      "RSS",
-      "Docling",
-      "PostgreSQL",
-      "Docker",
-    ],
+    techStack: ["OpenAI", "Pydantic", "RSS", "Docling", "PostgreSQL", "Docker"],
     highlights: [
       "Engineered an end-to-end Python pipeline that collects OpenAI/Anthropic RSS and YouTube updates, enriches web pages with Docling and video transcripts, and delivers personalized AI briefings via SMTP.",
       "Developed structured LLM workflows with the OpenAI Responses API and Pydantic schemas to generate source-constrained technical summaries, rank relevance against configurable reader profiles, and produce tailored email introductions.",

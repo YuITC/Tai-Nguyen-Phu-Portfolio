@@ -71,11 +71,15 @@ export default function ContactSection() {
 
   return (
     <section>
-      <motion.header initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
+      <motion.header
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4 }}
+      >
         <SectionTitle title="Contact" icon={MessageSquare} />
       </motion.header>
 
-      <motion.div
+      {/* <motion.div
         className="mb-8 max-w-2xl"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -104,7 +108,7 @@ export default function ContactSection() {
           </a>
           .
         </p>
-      </motion.div>
+      </motion.div> */}
 
       {/* Social links */}
       <motion.div
@@ -117,20 +121,38 @@ export default function ContactSection() {
           <a
             key={link.name}
             href={link.url}
-            target={link.url.startsWith("tel:") || link.url.startsWith("mailto:") ? undefined : "_blank"}
-            rel={link.url.startsWith("tel:") || link.url.startsWith("mailto:") ? undefined : "noopener noreferrer"}
+            target={
+              link.url.startsWith("tel:") || link.url.startsWith("mailto:")
+                ? undefined
+                : "_blank"
+            }
+            rel={
+              link.url.startsWith("tel:") || link.url.startsWith("mailto:")
+                ? undefined
+                : "noopener noreferrer"
+            }
             className="glass flex items-center gap-3 p-3 rounded-xl hover:shadow-md transition-all duration-200 group"
           >
             <div className="p-2 rounded-lg bg-[var(--color-accent)]/10 text-[var(--color-accent)] group-hover:bg-[var(--color-accent)] group-hover:text-white transition-colors">
-              {link.icon === "phone" ? <Phone size={20} /> : contactIconMap[link.icon]}
+              {link.icon === "phone" ? (
+                <Phone size={20} />
+              ) : (
+                contactIconMap[link.icon]
+              )}
             </div>
-            <span className="text-sm font-medium text-[var(--color-text-primary)]">{link.name}</span>
+            <span className="text-sm font-medium text-[var(--color-text-primary)]">
+              {link.name}
+            </span>
           </a>
         ))}
       </motion.div>
 
       {/* Contact form */}
-      <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.2 }}>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, delay: 0.2 }}
+      >
         <GlassCard className="p-6">
           <h3 className="font-[family-name:var(--font-heading)] font-semibold text-lg text-[var(--color-text-primary)] mb-4">
             Send me a message
@@ -143,7 +165,9 @@ export default function ContactSection() {
                 placeholder="Full name"
                 required
                 value={formData.fullname}
-                onChange={(e) => setFormData((prev) => ({ ...prev, fullname: e.target.value }))}
+                onChange={(e) =>
+                  setFormData((prev) => ({ ...prev, fullname: e.target.value }))
+                }
                 className="w-full px-4 py-3 rounded-xl bg-white/60 border border-slate-200 text-sm text-[var(--color-text-primary)] placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)]/30 focus:border-[var(--color-accent)] transition-all"
               />
               <input
@@ -152,7 +176,9 @@ export default function ContactSection() {
                 placeholder="Email address"
                 required
                 value={formData.email}
-                onChange={(e) => setFormData((prev) => ({ ...prev, email: e.target.value }))}
+                onChange={(e) =>
+                  setFormData((prev) => ({ ...prev, email: e.target.value }))
+                }
                 className="w-full px-4 py-3 rounded-xl bg-white/60 border border-slate-200 text-sm text-[var(--color-text-primary)] placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)]/30 focus:border-[var(--color-accent)] transition-all"
               />
             </div>
@@ -162,7 +188,9 @@ export default function ContactSection() {
               required
               rows={5}
               value={formData.message}
-              onChange={(e) => setFormData((prev) => ({ ...prev, message: e.target.value }))}
+              onChange={(e) =>
+                setFormData((prev) => ({ ...prev, message: e.target.value }))
+              }
               className="w-full px-4 py-3 rounded-xl bg-white/60 border border-slate-200 text-sm text-[var(--color-text-primary)] placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)]/30 focus:border-[var(--color-accent)] transition-all resize-none"
             />
             <button
@@ -171,13 +199,25 @@ export default function ContactSection() {
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[var(--color-accent)] text-white font-medium text-sm hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed shadow-lg shadow-blue-500/20"
             >
               {status === "sending" ? (
-                <><Loader2 size={16} className="animate-spin" />Sending...</>
+                <>
+                  <Loader2 size={16} className="animate-spin" />
+                  Sending...
+                </>
               ) : status === "success" ? (
-                <><CheckCircle2 size={16} />Sent!</>
+                <>
+                  <CheckCircle2 size={16} />
+                  Sent!
+                </>
               ) : status === "error" ? (
-                <><AlertCircle size={16} />Failed. Try again.</>
+                <>
+                  <AlertCircle size={16} />
+                  Failed. Try again.
+                </>
               ) : (
-                <><Send size={16} />Send Message</>
+                <>
+                  <Send size={16} />
+                  Send Message
+                </>
               )}
             </button>
           </form>
