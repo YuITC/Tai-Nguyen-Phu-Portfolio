@@ -58,7 +58,7 @@ _University of Information Technology — VNUHCM | Dec 2025 — Present_
 
 ### **Bachelor of Computer Science**
 
-_University of Information Technology — VNUHCM | Sep 2022 — Sep 2025_
+_University of Information Technology — VNUHCM | Sep 2022 — Jun 2025_
 
 - GPA: 3.5/4.0
 - Graduated with honors (very good)
