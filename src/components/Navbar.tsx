@@ -22,12 +22,12 @@ interface NavbarProps {
 export default function Navbar({ activeTab, onTabChange }: NavbarProps) {
   return (
     <nav className="glass px-2 py-2 mb-6 overflow-x-auto">
-      <ul className="flex items-center gap-1 min-w-max">
+      <ul className="flex min-w-max items-center gap-1 xl:min-w-0 xl:w-full">
         {TABS.map((tab) => (
-          <li key={tab} className="relative">
+          <li key={tab} className="relative shrink-0 xl:flex-1">
             <button
               onClick={() => onTabChange(tab)}
-              className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors relative z-10 ${
+              className={`relative z-10 w-full whitespace-nowrap rounded-lg px-4 py-2 text-sm font-medium transition-colors xl:px-2 ${
                 activeTab === tab
                   ? "text-[var(--color-accent)]"
                   : "text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)]"
