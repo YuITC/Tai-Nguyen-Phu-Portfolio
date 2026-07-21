@@ -1,29 +1,35 @@
 "use client";
 
 import { motion } from "motion/react";
-import { BrainCircuit, Bot, FlaskConical, User } from "lucide-react";
+import { Bot, Search, ScanText, Workflow, User } from "lucide-react";
 import { aboutText } from "@/data/personal";
 import GlassCard from "@/components/ui/GlassCard";
 import SectionTitle from "@/components/ui/SectionTitle";
 
 const services = [
   {
-    icon: BrainCircuit,
-    title: "LLM & RAG Systems",
-    description:
-      "Building production-ready retrieval-augmented generation pipelines with adaptive retrieval and self-correcting mechanisms.",
-  },
-  {
     icon: Bot,
-    title: "AI Agents",
+    title: "LLM & Agentic Systems",
     description:
-      "Designing autonomous agents with tool use, multi-step reasoning, and self-correction capabilities.",
+      "I design stateful LLM workflows with routing, tool use, structured outputs, observability, and recovery paths so agent behavior can be inspected and improved.",
   },
   {
-    icon: FlaskConical,
-    title: "ML Research",
+    icon: Search,
+    title: "Retrieval & Grounding",
     description:
-      "Exploring optimization techniques for language models including fine-tuning, prompt engineering, and DSPy.",
+      "I build hybrid sparse-dense retrieval, reranking, citation grounding, and evaluation pipelines for domain-specific RAG systems.",
+  },
+  {
+    icon: ScanText,
+    title: "Multimodal Document AI",
+    description:
+      "I train and integrate OCR, vision-language models, layout analysis, and computer vision pipelines that turn complex documents and images into reliable structured data.",
+  },
+  {
+    icon: Workflow,
+    title: "Applied AI Engineering",
+    description:
+      "I take models from experiment to product through reproducible training, FastAPI services, local or GPU inference, and human-in-the-loop review workflows.",
   },
 ];
 
@@ -51,7 +57,7 @@ export default function AboutSection() {
 
       <SectionTitle title="What I'm Doing" />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {services.map((service, i) => (
           <GlassCard
             key={service.title}

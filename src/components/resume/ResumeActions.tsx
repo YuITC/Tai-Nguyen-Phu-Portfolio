@@ -11,7 +11,7 @@ export default function ResumeActions() {
         <Download size={16} />
         Download Resume
       </a>
-      <a href={personalInfo.resumeUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl border border-[var(--color-accent)] text-[var(--color-accent)] font-medium text-sm hover:bg-[var(--color-accent)]/10 transition-colors">
+      <a href={personalInfo.resumeViewUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl border border-[var(--color-accent)] text-[var(--color-accent)] font-medium text-sm hover:bg-[var(--color-accent)]/10 transition-colors">
         <Eye size={16} />
         View Resume
       </a>

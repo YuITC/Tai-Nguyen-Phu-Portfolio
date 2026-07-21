@@ -3,7 +3,16 @@
 import { motion } from "motion/react";
 import { type TabName } from "@/types";
 
-const TABS: TabName[] = ["About", "Education", "Experience", "Skills", "Certifications", "Projects", "Blog", "Contact"];
+const TABS: TabName[] = [
+  "About",
+  "Education",
+  "Experience",
+  "Skills",
+  "Certifications",
+  "Projects",
+  "Activities",
+  "Contact",
+];
 
 interface NavbarProps {
   activeTab: TabName;

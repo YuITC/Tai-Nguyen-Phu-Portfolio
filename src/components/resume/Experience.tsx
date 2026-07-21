@@ -2,7 +2,7 @@
 
 import { motion } from "motion/react";
 import Image from "next/image";
-import { Briefcase } from "lucide-react";
+import { Briefcase, Building2 } from "lucide-react";
 import { experienceEntries } from "@/data/experience";
 import SectionTitle from "@/components/ui/SectionTitle";
 
@@ -14,7 +14,11 @@ export default function Experience() {
         {experienceEntries.map((entry, i) => (
           <motion.div key={i} className="flex gap-4" initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.4, delay: i * 0.15 }}>
             <div className="w-10 h-10 rounded-xl overflow-hidden bg-white border border-slate-200 shrink-0">
-              <Image src={entry.logo} alt={entry.company} width={40} height={40} className="object-contain w-full h-full p-1" />
+              {entry.logo ? (
+                <Image src={entry.logo} alt={entry.company} width={40} height={40} className="object-contain w-full h-full p-1" />
+              ) : (
+                <Building2 className="w-full h-full p-2.5 text-[var(--color-accent)]" aria-hidden="true" />
+              )}
             </div>
             <div>
               <h4 className="font-[family-name:var(--font-heading)] font-semibold text-[var(--color-text-primary)]">{entry.role}</h4>

@@ -1,5 +1,29 @@
 import { GitHubRepo, Project } from "@/types";
-import { PINNED_REPOS, CATEGORY_MAP } from "@/data/projects";
+import { PROJECT_DEFINITIONS, type ProjectDefinition } from "@/data/projects";
+
+const GITHUB_REPOS_URL =
+  "https://api.github.com/users/taingph2502/repos?per_page=100&sort=updated";
+
+function createProject(
+  definition: ProjectDefinition,
+  repository?: GitHubRepo,
+): Project {
+  return {
+    name: definition.repoName,
+    displayName: definition.displayName,
+    period: definition.period,
+    description: definition.description,
+    html_url: repository?.html_url ?? definition.htmlUrl,
+    homepage: repository?.homepage ?? null,
+    stargazers_count: repository?.stargazers_count ?? 0,
+    language: repository?.language ?? definition.fallbackLanguage,
+    topics: repository?.topics ?? [],
+    techStack: definition.techStack,
+    highlights: definition.highlights,
+    categories: definition.categories,
+    isPinned: definition.isPinned,
+  };
+}
 
 export async function fetchGitHubRepos(): Promise<Project[]> {
   const headers: HeadersInit = {
@@ -10,26 +34,30 @@ export async function fetchGitHubRepos(): Promise<Project[]> {
     headers.Authorization = `Bearer ${process.env.GITHUB_TOKEN}`;
   }
 
-  const res = await fetch(
-    "https://api.github.com/users/YuITC/repos?per_page=100&sort=updated",
-    {
+  try {
+    const response = await fetch(GITHUB_REPOS_URL, {
       headers,
       next: { revalidate: 3600 },
+    });
+
+    if (!response.ok) {
+      console.error("Failed to fetch GitHub repos:", response.status);
+      return PROJECT_DEFINITIONS.map((definition) => createProject(definition));
     }
-  );
 
-  if (!res.ok) {
-    console.error("Failed to fetch GitHub repos:", res.status);
-    return [];
+    const repositories: GitHubRepo[] = await response.json();
+    const repositoriesByName = new Map(
+      repositories.map((repository) => [repository.name.toLowerCase(), repository]),
+    );
+
+    return PROJECT_DEFINITIONS.map((definition) =>
+      createProject(
+        definition,
+        repositoriesByName.get(definition.repoName.toLowerCase()),
+      ),
+    );
+  } catch (error) {
+    console.error("Failed to fetch GitHub repos:", error);
+    return PROJECT_DEFINITIONS.map((definition) => createProject(definition));
   }
-
-  const repos: GitHubRepo[] = await res.json();
-
-  const filtered = repos.filter((repo) => repo.name !== "yuitc");
-
-  return filtered.map((repo) => ({
-    ...repo,
-    categories: CATEGORY_MAP[repo.name] || [],
-    isPinned: PINNED_REPOS.includes(repo.name),
-  }));
 }

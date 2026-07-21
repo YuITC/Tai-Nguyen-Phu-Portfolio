@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "motion/react";
 import { Award, ExternalLink } from "lucide-react";
 import { certificationEntries } from "@/data/certifications";
 import GlassCard from "@/components/ui/GlassCard";
@@ -9,7 +8,12 @@ import SectionTitle from "@/components/ui/SectionTitle";
 export default function Certifications() {
   return (
     <div>
-      <SectionTitle title="Certifications" icon={Award} />
+      <SectionTitle
+        title="Certifications"
+        icon={Award}
+        count={certificationEntries.length}
+        countLabel="certificates"
+      />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {certificationEntries.map((cert, i) => (
           <GlassCard key={`${cert.name}-${cert.date}`} hover className="p-4" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: i * 0.08 }}>

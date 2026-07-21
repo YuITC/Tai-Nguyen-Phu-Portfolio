@@ -10,8 +10,8 @@ import Education from "./resume/Education";
 import Experience from "./resume/Experience";
 import Skills from "./resume/Skills";
 import Certifications from "./resume/Certifications";
+import SocialActivities from "./resume/SocialActivities";
 import ProjectsSection from "./projects/ProjectsSection";
-import BlogSection from "./blog/BlogSection";
 import ContactSection from "./contact/ContactSection";
 
 interface PortfolioAppProps {
@@ -35,8 +35,8 @@ export default function PortfolioApp({ projects }: PortfolioAppProps) {
         return <Certifications />;
       case "Projects":
         return <ProjectsSection projects={projects} />;
-      case "Blog":
-        return <BlogSection />;
+      case "Activities":
+        return <SocialActivities />;
       case "Contact":
         return <ContactSection />;
     }

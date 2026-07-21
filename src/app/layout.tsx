@@ -25,13 +25,13 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Tai Nguyen Phu — AI Engineer",
+  title: "Tai Nguyen Phu — LLM & AI Agent Engineer",
   description:
-    "Aspiring AI Engineer specializing in LLM-powered systems, RAG, agentic workflows, and model fine-tuning.",
+    "LLM and AI Agent Engineer building reliable agentic RAG systems, multimodal document intelligence, and applied AI products.",
   openGraph: {
-    title: "Tai Nguyen Phu — AI Engineer",
+    title: "Tai Nguyen Phu — LLM & AI Agent Engineer",
     description:
-      "Aspiring AI Engineer specializing in LLM-powered systems, RAG, agentic workflows, and model fine-tuning.",
+      "LLM and AI Agent Engineer building reliable agentic RAG systems, multimodal document intelligence, and applied AI products.",
     type: "website",
   },
 };

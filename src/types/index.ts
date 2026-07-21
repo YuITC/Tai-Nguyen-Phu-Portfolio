@@ -1,6 +1,7 @@
 export interface PersonalInfo {
   name: string;
   title: string;
+  tagline: string;
   dob: string;
   location: string;
   summary: string;
@@ -8,6 +9,7 @@ export interface PersonalInfo {
   phone: string;
   avatar: string;
   resumeUrl: string;
+  resumeViewUrl: string;
 }
 
 export interface SocialLink {
@@ -33,7 +35,14 @@ export interface EducationEntry {
 export interface ExperienceEntry {
   role: string;
   company: string;
-  logo: string;
+  logo?: string;
+  period: string;
+  bullets: string[];
+}
+
+export interface SocialActivityEntry {
+  title: string;
+  role: string;
   period: string;
   bullets: string[];
 }
@@ -57,8 +66,20 @@ export interface GitHubRepo {
 }
 
 export interface Project extends GitHubRepo {
+  displayName: string;
+  period: string;
+  techStack: string[];
+  highlights: string[];
   categories: string[];
   isPinned: boolean;
 }
 
-export type TabName = "About" | "Education" | "Experience" | "Skills" | "Certifications" | "Projects" | "Blog" | "Contact";
+export type TabName =
+  | "About"
+  | "Education"
+  | "Experience"
+  | "Skills"
+  | "Certifications"
+  | "Projects"
+  | "Activities"
+  | "Contact";

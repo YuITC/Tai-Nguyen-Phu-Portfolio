@@ -75,6 +75,37 @@ export default function ContactSection() {
         <SectionTitle title="Contact" icon={MessageSquare} />
       </motion.header>
 
+      <motion.div
+        className="mb-8 max-w-2xl"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, delay: 0.05 }}
+      >
+        <h3 className="font-[family-name:var(--font-heading)] text-xl font-semibold text-[var(--color-text-primary)]">
+          Let&apos;s Build Reliable AI Systems
+        </h3>
+        <p className="mt-2 text-[var(--color-text-secondary)] leading-relaxed">
+          Have a role, project, or research idea involving LLM agents, RAG, or
+          multimodal document AI? Email me at{" "}
+          <a
+            href="mailto:tainguyenphu2502@gmail.com"
+            className="font-medium text-[var(--color-accent)] hover:underline"
+          >
+            tainguyenphu2502@gmail.com
+          </a>{" "}
+          or connect with me on{" "}
+          <a
+            href="https://www.linkedin.com/in/taingph2502/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium text-[var(--color-accent)] hover:underline"
+          >
+            LinkedIn
+          </a>
+          .
+        </p>
+      </motion.div>
+
       {/* Social links */}
       <motion.div
         className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-8"
@@ -87,7 +118,7 @@ export default function ContactSection() {
             key={link.name}
             href={link.url}
             target={link.url.startsWith("tel:") || link.url.startsWith("mailto:") ? undefined : "_blank"}
-            rel="noopener noreferrer"
+            rel={link.url.startsWith("tel:") || link.url.startsWith("mailto:") ? undefined : "noopener noreferrer"}
             className="glass flex items-center gap-3 p-3 rounded-xl hover:shadow-md transition-all duration-200 group"
           >
             <div className="p-2 rounded-lg bg-[var(--color-accent)]/10 text-[var(--color-accent)] group-hover:bg-[var(--color-accent)] group-hover:text-white transition-colors">

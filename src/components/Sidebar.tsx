@@ -50,6 +50,9 @@ export default function Sidebar() {
           <p className="text-sm font-medium text-[var(--color-accent)] bg-[var(--color-accent)]/10 rounded-full px-3 py-0.5 mt-1 inline-block">
             {personalInfo.title}
           </p>
+          <p className="mt-3 max-w-[240px] text-xs leading-relaxed text-[var(--color-text-secondary)]">
+            {personalInfo.tagline}
+          </p>
         </div>
         <button
           onClick={() => setIsExpanded(!isExpanded)}
@@ -145,8 +148,8 @@ function ContactDetails() {
           <li key={link.name}>
             <a
               href={link.url}
-              target="_blank"
-              rel="noopener noreferrer"
+              target={link.url.startsWith("mailto:") ? undefined : "_blank"}
+              rel={link.url.startsWith("mailto:") ? undefined : "noopener noreferrer"}
               className="p-2 rounded-lg bg-slate-100 hover:bg-[var(--color-accent)] hover:text-white text-slate-500 transition-all duration-200 inline-flex hover:scale-110"
               aria-label={link.name}
             >
@@ -168,7 +171,7 @@ function ContactDetails() {
           Download Resume
         </a>
         <a
-          href={personalInfo.resumeUrl}
+          href={personalInfo.resumeViewUrl}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl border border-[var(--color-accent)] text-[var(--color-accent)] font-medium text-sm hover:bg-[var(--color-accent)]/10 transition-colors"

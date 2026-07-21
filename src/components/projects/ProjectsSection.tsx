@@ -29,7 +29,12 @@ export default function ProjectsSection({ projects }: ProjectsSectionProps) {
   return (
     <section>
       <motion.header initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
-        <SectionTitle title="Projects" icon={Terminal} />
+        <SectionTitle
+          title="Projects"
+          icon={Terminal}
+          count={projects.length}
+          countLabel="projects"
+        />
       </motion.header>
 
       <motion.div className="flex flex-wrap gap-2 mb-8" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.1 }}>

@@ -65,7 +65,7 @@ export default function Modal({ isOpen, onClose, children, title }: ModalProps) 
           />
           <motion.div
             ref={modalRef}
-            className="glass relative z-10 w-full max-w-2xl max-h-[85vh] overflow-y-auto p-6 lg:p-8"
+            className="glass relative z-10 w-full max-w-2xl max-h-[85vh] overflow-y-auto p-6 focus:outline-none lg:p-8"
             initial={{ opacity: 0, scale: 0.95, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
