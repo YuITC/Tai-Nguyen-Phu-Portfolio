@@ -14,7 +14,7 @@ export const personalInfo: PersonalInfo = {
   avatar: "/images/me.png",
   resumeUrl: "/resumes/2026-07-21.pdf",
   resumeViewUrl:
-    "https://drive.google.com/file/d/1uEOY2r_J7MEOVzUDr1Y9EfEd0hj-jfX6/view?usp=drive_link",
+    "https://drive.google.com/file/d/1jtKPsenN--3jE13t8EkPA1wk_SoAwbt5/view?usp=drive_link",
 };
 
 export const socialLinks: SocialLink[] = [

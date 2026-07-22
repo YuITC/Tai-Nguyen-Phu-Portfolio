@@ -20,7 +20,7 @@
 
 ### Resume
 
-- Drive: https://drive.google.com/file/d/1uEOY2r_J7MEOVzUDr1Y9EfEd0hj-jfX6/view?usp=drive_link
+- Drive: https://drive.google.com/file/d/1jtKPsenN--3jE13t8EkPA1wk_SoAwbt5/view?usp=drive_link
 
 # II - About
 
